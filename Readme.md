@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Оля Собака](https://up.htmlacademy.ru/htmlcss/24/user/129479).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Глаголь] (https://htmlacademy.ru/profile/dariaglagol).
 
 ---
 
