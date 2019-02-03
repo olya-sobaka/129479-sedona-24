@@ -79,18 +79,19 @@
       </p>
       <section class="hotel-search">
         <h2>Поиск гостиницы в Седоне</h2>
-        <form class="search-form">
+        <form class="hotels-search-form" method="post" 
+        action="https://echo.htmlacademy.ru">
           <label for="check-in-date">Дата заезда:</label>
-          <input type="date" id="check-in-date">
+          <input type="date" id="check-in-date" name="check-in-date">
           <label for="check-in-date">Дата выезда:</label>
-          <input type="date" id="check-out-date">
+          <input type="date" id="check-out-date" name="check-out-date">
           <div class="form-half-width">
             <label for="adults">Взрослые:</label>
-            <input type="number" id="adults">
+            <input type="number" id="adults" min="1" max="7">
             <label for="kids">Дети:</label>
-            <input type="number" id="kids">
+            <input type="number" id="kids"  min="1" max="7">
           </div>
-          <button class="search-button">Найти</button>
+          <button class="search-button" type="submit">Найти</button>
         </form>
       </section>
     </main>
@@ -98,13 +99,13 @@
       <span>#VISITESEDONA</span>
       <ul class="social">
         <li>
-          <a class="social-button" href="#">Твиттер</a>
+          <a class="social-button" href="#" aria-label="Седона в Твиттере"></a>
         </li>
         <li>
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#" aria-label="Седона на Фейсбуке"></a>
         </li>
         <li>
-          <a class="social-button" href="#">Ютуб</a>
+          <a class="social-button" href="#" aria-label="Седона на Ютубе"></a>
         </li>
       </ul>
       <p class="copyright">
