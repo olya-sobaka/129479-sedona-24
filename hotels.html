@@ -26,7 +26,6 @@
           </ul>
         </nav>
       </header>
-
       <main class="container">
         <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
         <section class="search-filters">
@@ -68,12 +67,12 @@
             </fieldset>
             <fieldset class="filer-price">
               <legend>Стоимость в сутки (Р):</legend>
-              <label for="price-min">От</label>
               <div class="filter-border">
+                <label for="price-min">От</label>
                 <input type="text" value="0" name="price-min" id="price-min">
-              </div> 
-              <label for="price-max">До</label>
+              </div>
               <div class="filter-border">
+                <label for="price-max">До</label>
                 <input type="text" value="3000" name="price-max" id="price-max">
               </div>
               <span class="slider-button"></span>
@@ -102,75 +101,105 @@
           <ul class="sort-buttons">
             <li>
               <a href="#">
-                <img src="img/hotels/icon-arrow-up" alt="Сортировать от меньшего к большему">
+                <img src="img/hotels/icon-arrow-up.svg" alt="Сортировать от меньшего к большему">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/hotels/icon-arrow-down" alt="Сортировать от большего к меньшему">
+                <img src="img/hotels/icon-arrow-down.svg" alt="Сортировать от большего к меньшему">
               </a>
             </li>
           </ul>
           <h2 class="visually-hidden">Гостниницы</h2>
           <table class="hotels-found">
             <tr>
-              <th>Amara Resort & Spa</th>
+              <td rowspan="3">
+                  <a href="#" class="hotel-photo-fullsize">
+                      <img src="img/hotels/Amara-Resort-Spa.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa">
+                    </a>
+              </td>
+              <th>
+                <a href="#">Amara Resort & Spa</a>
+              </th>
               <td>
-                <a href="#" class="hotel-photo-fullsize">
-                  <img src="img/hotels/Amara-Resort-Spa.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa">
-                </a>
+                  <img src="img/hotels/icon-star.svg" alt="4 звезды">
+                  <img src="img/hotels/icon-star.svg">
+                  <img src="img/hotels/icon-star.svg">
+                  <img src="img/hotels/icon-star.svg">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="hotel-type">Гостиница</span>
               </td>
               <td>
-                <img src="img/hotels/icon-star" alt="4 звезды">
-                <img src="img/hotels/icon-star">
-                <img src="img/hotels/icon-star">
-                <img src="img/hotels/icon-star">
+                <span class="price">От 4000 Р.</span>
               </td>
-              <td class="hotel-type">Гостиница</td>
-              <td class="price">От 4000 Р.</td>
+            </tr>
+            <tr>
               <td>
-                <a href="#" class="hotels-list-button">Подробнее</a>
+                  <a href="#" class="hotels-list-button">Подробнее</a>
               </td>
               <td>
-                <a href="#" class="hotels-list-button">Забронировать</a>
+                  <a href="#" class="hotels-list-button">Забронировать</a>
               </td>
               <td class="rating">Рейтинг:8,5</td>
             </tr>
             <tr>
-              <th>Desert Quail Inn</th>
+              <td rowspan="3">
+                  <a href="#" class="hotel-photo-fullsize">
+                      <img src="img/hotels/Desert-Quail-Inn.jpg" width="135" height="90" alt="Фото гостиницы Desert Quail Inn">
+                    </a>
+              </td>
+              <th>
+                <a href="#">Desert Quail Inn</a>
+              </th>
               <td>
-                <a href="#" class="hotel-photo-fullsize">
-                  <img src="img/hotels/Desert-Quail-Inn.jpg" width="135" height="90" alt="Фото гостиницы Desert Quail Inn">
-                </a>
+                  <img src="img/hotels/icon-star.svg" alt="3 звезды">
+                  <img src="img/hotels/icon-star.svg">
+                  <img src="img/hotels/icon-star.svg">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="hotel-type">Мотель</span>
               </td>
               <td>
-                <img src="img/hotels/icon-star" alt="3 звезды">
-                <img src="img/hotels/icon-star">
-                <img src="img/hotels/icon-star">
+                  <span class="price">От 3000 Р.</span>
               </td>
-              <td class="hotel-type">Мотель</td>
-              <td class="price">От 3000 Р.</td>
+            </tr>
+            <tr>
               <td>
                 <a href="#" class="hotels-list-button">Подробнее</a>
               </td>
               <td>
-                <a href="#" class="hotels-list-button">Забронировать</a>
+                  <a href="#" class="hotels-list-button">Забронировать</a>
               </td>
               <td class="rating">Рейтинг:8,9</td>
             </tr>
             <tr>
-              <th>Villas at Poco Diablo</th>
+              <td rowspan="3">
+                  <a href="#" class="hotel-photo-fullsize">
+                      <img src="img/hotels/Villas-Poco-Diablo.jpg" width="135" height="90" alt="Фото гостиницы Villas at Poco Diablo">
+                  </a>
+              </td>
+              <th>
+                <a href="#">Villas at Poco Diablo</a>
+              </th>
               <td>
-                <a href="#" class="hotel-photo-fullsize">
-                  <img src="img/hotels/Villas-Poco-Diablo.jpg" width="135" height="90" alt="Фото гостиницы Villas at Poco Diablo">
-                </a>
+                  <img src="img/hotels/icon-star.svg" alt="2 звезды">
+                  <img src="img/hotels/icon-star.svg">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="hotel-type">Апартаменты</span>
               </td>
               <td>
-                <img src="img/hotels/icon-star" alt="2 звезды">
-                <img src="img/hotels/icon-star">
+                <span class="price">От 2000 Р.</span>
               </td>
-              <td class="hotel-type">Апартаменты</td>
-              <td class="price">От 2000 Р.</td>
+            </tr>
+            <tr>
               <td>
                 <a href="#" class="hotels-list-button">Подробнее</a>
               </td>
@@ -180,9 +209,6 @@
               <td class="rating">Рейтинг:9,2</td>
             </tr>
           </table>
-
-
-
           <!-- <ul class="hotels-list">
             <li class="hotel">
               <h4>Amara Resort & Spa</h4>
@@ -226,7 +252,6 @@
           </ul>-->
         </section>
       </main>
-
         <footer class="main-footer">
           <span>#VISITESEDONA</span>
           <ul class="social">
@@ -248,6 +273,5 @@
             </a>
           <p>
         </footer>
-
   </body>
 </html>
