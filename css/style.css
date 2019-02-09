@@ -8,22 +8,17 @@ body {
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 0px;
-
     background-color: #f2f2f2;
-    
 }
 
-.background-images {
-    width: 1200px;
-    height: 800px;
-    background-image: url("../img/index/white-mask.svg"), url("../img/index/welcome-to-sedona.svg"), url("../img/index/bg.jpg");
-    background-position: bottom center, center 75px, top center;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-}
+/* ?Почему у меня в chrome (и в других браузерах) шрифт выглядит непохоже на макет? В одних браузерах он выглядит тонким, 
+в других слишком жирным и т.д. Откуда берется эта разница и допустима ли она? */
 
 a {
     text-decoration: none;
 }
+
+                                            /* Хедер */
 
 .main-navigation {
     font-size: 14px;
@@ -51,6 +46,28 @@ a {
     color: #b2b2b2;
 }
 
+    /* ?По стайлгайду у ссылок в nav 4 состояния: покой, наведение(фокус?), нажатие и "активный, находимся на странице"
+     Первые 3 я сделала с помощью :hover, :focus и :active, а как сделать последнее? */
+
+
+                                            /* Main */
+
+.welcome-images {
+    width: 1200px;
+    height: 800px;
+    background-image: 
+    url("../img/index/white-mask.svg"), 
+    url("../img/index/welcome-to-sedona.svg"), 
+    url("../img/index/bg.jpg");
+    background-position: bottom center, center 75px, top center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+/* ?Странное отображение welcome-to-sedona.png? 
+    ?Как убрать тонкую ченрую рамку по краю white-masl.svg?
+*/
+
+
 .about-sedona {
     font-size: 21px;
     font-style: bold;
@@ -65,22 +82,31 @@ a {
 
 .advantages-list {
     list-style: none;
-    background-color: #ffffff;
-}
-
-.advantages-list li{
-    text-align: center;
+    background-color: #efefef;
     color: #333333;
 }
 
-.advantages-list li:first-child {
-    color: #ffffff;
-    background-color: #81b3d2;
+.advantages-list li {
+    text-align: center;
 }
 
-.advantages-list li:nth-child(2) {
-    color: #ffffff;
+.blue-bg {
     background-color: #81b3d2;
+    color: #ffffff;
+}
+
+.list-image-hotel {
+background-image: url("../img/index/hotel-bg.jpg");
+background-repeat: no-repeat;
+width: 800px;
+height: 400px;
+}
+
+.list-image-mountains {
+background-image: url("../img/index/small-mountains-bg.jpg");
+background-repeat: no-repeat;
+width: 800px;
+height: 400px;
 }
 
 .advantages-list h3 {
@@ -148,6 +174,8 @@ a {
     border: 2px solid #e5e5e5;
 }
 
+/* ?Как задать разные цвета для разных состояний иконки календаря, если это контекстное изображение? */
+
 .button {
     font: inherit;
     text-transform: uppercase;
@@ -195,6 +223,8 @@ a {
     background-image: url("../img/index/map.jpg")
 }
 
+                                          /* Футер */
+
 .main-footer span {
     color: #000000;
     font-size: 21px;
@@ -203,44 +233,225 @@ a {
 
 .social {
     list-style: none;
-    width: 180px;
-    height: 100px;
-    text-align: center;
 }
 
-.social-button {
+
+.twitter {
+    background-color: #81b3d2;
+    width: 46px;
+    height: 48px;
+    background-image: url("../img/index/icon-twitter.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-color: #81b3d2;
+    width: 46px;
+    height: 48px;
+    background-image: url("../img/index/icon-fb.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.youtube {
+    background-color: #81b3d2;
+    width: 46px;
+    height: 48px;
+    background-image: url("../img/index/icon-youtube.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.twitter:hover,
+.facebook:hover,
+.youtube:hover,
+.twitter:focus,
+.facebook:focus,
+.youtube:focus {
+    background-color: #669ec0;
+}
+
+/* ?Иконки почему-то не реагируют на :focus, но реагируют на :hover? */
+
+.twitter:active {
+    background-color: #5496bd;
+    background-image: url("../img/index/icon-twitter-active.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.facebook:active {
+    background-color: #5496bd;
+    background-image: url("../img/index/icon-fb-active.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.youtube:active {
+    background-color: #5496bd;
+    background-image: url("../img/index/icon-youtube-active.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ?Как поменять цвет лого хтмл академии в разных состояниях, если это контекстное изображение?*/
+
+
+                                            /* hotels main */
+
+.filter {
+    color: #ffffff;
+    background-color: #85a4c2;
+    list-style: none;
+    background-image: url(../img/hotels/mountains-blurry-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 16px;
+}
+
+.filter input {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+.filter ul {
+    list-style: none;
+}
+
+.filter-button {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    width: 133px;
+    height: 32px;
+    font: inherit;
+    text-transform: uppercase;
+}
+
+    /* ?Как стилизовать чекбоксы и ползунок мне пока непонятно? */
+
+.wrap-sorting {
+    background-color: #fefefe;
+}
+
+.found {
+    color: #000000;
+    font-size: 21px;
+    font-style: bold;
+}
+
+.sort {
+    color: #000000;
+    font-size: 12px;
+    font-style: regular;
+}
+
+.sort-links {
+    list-style: none;
+}
+
+.sort-link {
+    color: #b2b2b2;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #81b3d2;
+}
+
+.sort-link:hover,
+.sort-link:focus {
+    color: #81b3d2;
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #81b3d2;
+}
+
+.sort-link:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+.sort-buttons {
+    list-style: none;
+}
+
+/* ?Как задать разные цвета в разных состояниях сортировочных кнопок .sort-buttons если они являются контекстными изображениями? */
+
+.hotels-found {
+    background-color: #fefefe;
+    color: #333333;
+    font-size: 14px;
+}
+
+/* ?Как сделать горизонтальные линии вокруг и в таблице? */
+
+.hotels-found a {
+    color: #000000;
+    font-size: 21px;
+    font-style: bold;
+}
+
+.hotels-found a:hover,
+.hotels-found a:focus {
     color: #81b3d2;
 }
 
-.social li{
-    width: 46px;
-    height: 48px;
+.hotels-found a:active {
+    color: #b2b2b2;
 }
 
-
-.twitter a {
-    background-color: #81b3d2;
-    width: 46px;
-    height: 48px;
-    background-image: url("../img/index/icon-twitter.svg");
-    background-position: 15px 15px;
-    background-repeat: no-repeat;
+.hotels-found .rating {
+    color: #666666;
+    background-color: #f2f2f2;
+    width: 110px;
+    height: 27px;
 }
 
-.facebook a {
+.hotels-found .button-more {
+    color: #ffffff;
+    font-size: 14px;
+    font-style: bold;
     background-color: #81b3d2;
-    width: 46px;
-    height: 48px;
-    background-image: url("../img/index/icon-facebook.svg");
-    background-position: 15px 15px;
-    background-repeat: no-repeat;
+    width: 110px;
+    height: 27px;
 }
 
-.youtube a {
-    background-color: #81b3d2;
-    width: 46px;
-    height: 48px;
-    background-image: url("../img/index/icon-youtube.svg");
-    background-position: 15px 15px;
-    background-repeat: no-repeat;
+.hotels-found .button-more:hover,
+.hotels-found .button-more:focus {
+    color: #ffffff;
+    background-color: #669ec0;
+}
+
+.hotels-found .button-more:active {
+    color: #87b6d1;
+    background-color: #5496bd;
+}
+
+.hotels-found .button-book {
+    color: #ffffff;
+    font-size: 14px;
+    font-style: bold;
+    background-color: #766357;
+    width: 142px;
+    height: 27px;
+}
+
+.hotels-found .button-book:hover,
+.hotels-found .button-book:focus {
+    color: #ffffff;
+    background-color: #604e43;
+}
+
+.hotels-found .button-book:active {
+    color: #847870;
+    background-color: #503e33;
 }

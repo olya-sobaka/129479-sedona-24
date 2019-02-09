@@ -31,17 +31,20 @@
         </nav>
     </header>
     <main class="container">
-      <div class="background-images"></div>
+      <div class="welcome-images"></div>
       <h1 class="visually-hidden">Город Седона</h1>
       <p class="about-sedona">Седона — небольшой городок в Аризоне,
       заслуживающий большего!</p>
       <section class="advantages">
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-        <ol class="advantages-list">
-          <li>
+        <ul class="advantages-list">
+          <li class="blue-bg">
             <h3>Настоящий городок</h3>
               <span>— №1 —</span>
               Седона — не аттракцион для туристов, там течёт своя жизнь
+          </li>
+          <li class="list-image-hotel"></li>
+          <li>
             <ul class="features">
               <li>
                 <h4>Жильё</h4>
@@ -54,10 +57,10 @@
               <li>
                 <h4>Сувениры</h4>
                 Не только китайского, но и местного производства!
-              </li>
             </ul>
           </li>
-          <li>
+          <li class="list-image-mountains"></li>
+          <li class="blue-bg">
             <h3>Там есть Мост дьявола</h3>
               <span>— №2 —</span>
               Да, по нему можно пройти! Если конечно вы осмелитесь
@@ -77,7 +80,7 @@
             <span>— №5 —</span>
             Большинство едет в гранд каньон и толпится там
           </li>
-        </ol>
+        </ul>
     </section>
       <div class="container">
         <b>Заинтересовались?</b>
@@ -91,8 +94,10 @@
           action="https://echo.htmlacademy.ru">
             <label for="check-in-date">Дата заезда:</label>
             <input type="text" id="check-in-date" name="check-in-date" value="24 апреля 2019">
+            <img src="img/index/icon-calendar.png" class="icon-calendar">
             <label for="check-out-date">Дата выезда:</label>
             <input type="text" id="check-out-date" name="check-out-date" value="4 июля 2019">
+            <img src="img/index/icon-calendar.png" class="icon-calendar">
             <div class="form-half-width">
               <label for="adults">Взрослые:</label>
               <button type="button" class="button button-min">-</button>
@@ -112,13 +117,19 @@
       <span>#VISITESEDONA</span>
       <ul class="social">
         <li>
-          <a class="social-button twitter" href="#" aria-label="Седона в Твиттере"></a>
+          <a href="#" aria-label="Седона в Твиттере">
+            <div class="twitter"></div>
+          </a>
         </li>
         <li>
-          <a class="social-button facebook" href="#" aria-label="Седона на Фейсбуке"></a>
+          <a href="#" aria-label="Седона на Фейсбуке">
+            <div class="facebook"></div>
+          </a>
         </li>
         <li>
-          <a class="social-button youtube" href="#" aria-label="Седона на Ютубе"></a>
+          <a href="#" aria-label="Седона на Ютубе">
+            <div class="youtube"></div>
+          </a>
         </li>
       </ul>
       <p class="copyright">
