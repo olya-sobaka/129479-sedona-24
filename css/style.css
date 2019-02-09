@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+
+    background-color: #f2f2f2;
+    
+}
+
+.background-images {
+    width: 1200px;
+    height: 800px;
+    background-image: url("../img/index/white-mask.svg"), url("../img/index/welcome-to-sedona.svg"), url("../img/index/bg.jpg");
+    background-position: bottom center, center 75px, top center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 14px;
+    font-style: bold;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+    font-weight: 700;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: #b2b2b2;
+}
+
+.about-sedona {
+    font-size: 21px;
+    font-style: bold;
+    line-height: 26px;
+    text-align: center;
+}
+
+.advantages h2 {
+    font-size: 14px;
+    text-align: center;
+}
+
+.advantages-list {
+    list-style: none;
+    background-color: #ffffff;
+}
+
+.advantages-list li{
+    text-align: center;
+    color: #333333;
+}
+
+.advantages-list li:first-child {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.advantages-list li:nth-child(2) {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.advantages-list h3 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.features {
+    list-style: none;
+    background-color: #ffffff;
+}
+
+.features li {
+    color: #000000;
+    font-weight: 400;
+}
+
+.features h4 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.container {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.container b {
+    font-size: 30px;
+}
+
+.hotel-search form {
+    background-color: #ffffff;
+}
+
+.hotel-search h2 {
+    color: #ffffff;
+    background-color: #766357;
+    font-size: 21px;
+}
+
+.hotel-search h2:hover,
+.hotel-search h2:focus {
+    background-color: #604e43;
+}
+
+.hotel-search h2:active {
+    color: #847870;
+    background-color: #503e33;
+}
+
+.hotel-search-form input {
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.hotel-search-form input:hover {
+    background-color: #ebebeb;
+}
+
+.hotel-search-form input:focus {
+    outline: none;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+.button {
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button-min,
+.button-plus {
+    background-color: #f2f2f2;
+    color: #a9a9a9;
+} 
+
+.button-min:hover,
+.button-plus:hover,
+.button-min:focus,
+.button-plus:focus {
+    color: #000000;
+}
+
+.button-min:active,
+.button-plus:active {
+    color: #81b3d2;
+}
+
+.search-button {
+    color: #ffffff;
+    background-color: #81b3d2;
+    width: 458px;
+    height: 58px;
+}
+
+.search-button:hover,
+.search-button:focus {
+    background-color:#669ec0;
+}
+
+.search-button:active {
+    background-color: #5496bd;
+    color: #87b6d1;
+}
+
+.map-bg {
+    width: 1200px;
+    height: 594px;
+    background-image: url("../img/index/map.jpg")
+}
+
+.main-footer span {
+    color: #000000;
+    font-size: 21px;
+    font-style: bold;
+}
+
+.social {
+    list-style: none;
+    width: 180px;
+    height: 100px;
+    text-align: center;
+}
+
+.social-button {
+    color: #81b3d2;
+}
+
+.social li{
+    width: 46px;
+    height: 48px;
+}
+
+
+.twitter a {
+    background-color: #81b3d2;
+    width: 46px;
+    height: 48px;
+    background-image: url("../img/index/icon-twitter.svg");
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+.facebook a {
+    background-color: #81b3d2;
+    width: 46px;
+    height: 48px;
+    background-image: url("../img/index/icon-facebook.svg");
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+.youtube a {
+    background-color: #81b3d2;
+    width: 46px;
+    height: 48px;
+    background-image: url("../img/index/icon-youtube.svg");
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+}
