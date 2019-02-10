@@ -22,7 +22,7 @@ a {
 
 .main-navigation {
     font-size: 14px;
-    font-style: bold;
+    font-weight: 700;
     line-height: 26px;
     color: #000000;
     background-color: #ffffff
@@ -59,7 +59,7 @@ a {
     url("../img/index/white-mask.svg"), 
     url("../img/index/welcome-to-sedona.svg"), 
     url("../img/index/bg.jpg");
-    background-position: bottom center, center 75px, top center;
+    background-position: 0px 532px, 50% 160px, 50% 50%;
     background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
@@ -70,14 +70,17 @@ a {
 
 .about-sedona {
     font-size: 21px;
-    font-style: bold;
+    font-weight: 700;
     line-height: 26px;
     text-align: center;
 }
 
 .advantages h2 {
     font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
     text-align: center;
+    color: #333333;
 }
 
 .advantages-list {
@@ -96,22 +99,23 @@ a {
 }
 
 .list-image-hotel {
-background-image: url("../img/index/hotel-bg.jpg");
-background-repeat: no-repeat;
-width: 800px;
-height: 400px;
+    background-image: url("../img/index/hotel-bg.jpg");
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 400px;
 }
 
 .list-image-mountains {
-background-image: url("../img/index/small-mountains-bg.jpg");
-background-repeat: no-repeat;
-width: 800px;
-height: 400px;
+    background-image: url("../img/index/small-mountains-bg.jpg");
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 400px;
 }
 
 .advantages-list h3 {
     font-size: 21px;
     font-weight: 700;
+    line-height: 21px;
 }
 
 .features {
@@ -120,22 +124,27 @@ height: 400px;
 }
 
 .features li {
-    color: #000000;
+    color: #333333;
     font-weight: 400;
 }
 
 .features h4 {
+    color: #000000;
     font-size: 21px;
     font-weight: 700;
+    line-height: 21px;
 }
 
 .container {
+    color: #000000;
     background-color: #ffffff;
     text-align: center;
 }
 
-.container b {
+.interested b {
+    color: #333333;
     font-size: 30px;
+    line-height: 36px;
 }
 
 .hotel-search form {
@@ -146,6 +155,7 @@ height: 400px;
     color: #ffffff;
     background-color: #766357;
     font-size: 21px;
+    line-height: 26px;
 }
 
 .hotel-search h2:hover,
@@ -158,10 +168,20 @@ height: 400px;
     background-color: #503e33;
 }
 
+.hotel-search-form label {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
 .hotel-search-form input {
     text-transform: uppercase;
     background-color: #f2f2f2;
     border: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 .hotel-search-form input:hover {
@@ -203,6 +223,9 @@ height: 400px;
 .search-button {
     color: #ffffff;
     background-color: #81b3d2;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
     width: 458px;
     height: 58px;
 }
@@ -228,7 +251,8 @@ height: 400px;
 .main-footer span {
     color: #000000;
     font-size: 21px;
-    font-style: bold;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 .social {
@@ -240,7 +264,7 @@ height: 400px;
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
-    background-image: url("../img/index/icon-twitter.png");
+    background-image: url("../img/index/icon-twitter.svg");
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -249,7 +273,7 @@ height: 400px;
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
-    background-image: url("../img/index/icon-fb.png");
+    background-image: url("../img/index/icon-fb.svg");
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -258,7 +282,7 @@ height: 400px;
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
-    background-image: url("../img/index/icon-youtube.png");
+    background-image: url("../img/index/icon-youtube.svg");
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -276,21 +300,21 @@ height: 400px;
 
 .twitter:active {
     background-color: #5496bd;
-    background-image: url("../img/index/icon-twitter-active.png");
+    background-image: url("../img/index/icon-twitter-active.svg");
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .facebook:active {
     background-color: #5496bd;
-    background-image: url("../img/index/icon-fb-active.png");
+    background-image: url("../img/index/icon-fb-active.svg");
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .youtube:active {
     background-color: #5496bd;
-    background-image: url("../img/index/icon-youtube-active.png");
+    background-image: url("../img/index/icon-youtube-active.svg");
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -315,6 +339,7 @@ height: 400px;
 
 .filter legend {
     font-size: 16px;
+    line-height: 21px;
 }
 
 .filter input {
@@ -345,13 +370,15 @@ height: 400px;
 .found {
     color: #000000;
     font-size: 21px;
-    font-style: bold;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 .sort {
     color: #000000;
     font-size: 12px;
-    font-style: regular;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 .sort-links {
@@ -390,6 +417,7 @@ height: 400px;
     background-color: #fefefe;
     color: #333333;
     font-size: 14px;
+    line-height: 21px;
 }
 
 /* ?Как сделать горизонтальные линии вокруг и в таблице? */
@@ -397,7 +425,8 @@ height: 400px;
 .hotels-found a {
     color: #000000;
     font-size: 21px;
-    font-style: bold;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 .hotels-found a:hover,
@@ -419,7 +448,8 @@ height: 400px;
 .hotels-found .button-more {
     color: #ffffff;
     font-size: 14px;
-    font-style: bold;
+    font-weight: 700;
+    line-height: 21px;
     background-color: #81b3d2;
     width: 110px;
     height: 27px;
@@ -439,7 +469,8 @@ height: 400px;
 .hotels-found .button-book {
     color: #ffffff;
     font-size: 14px;
-    font-style: bold;
+    font-weight: 700;
+    line-height: 21px;
     background-color: #766357;
     width: 142px;
     height: 27px;
