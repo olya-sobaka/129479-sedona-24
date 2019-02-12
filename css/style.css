@@ -11,9 +11,6 @@ body {
     background-color: #f2f2f2;
 }
 
-/* ?Почему у меня в chrome (и в других браузерах) шрифт выглядит непохоже на макет? В одних браузерах он выглядит тонким, 
-в других слишком жирным и т.д. Откуда берется эта разница и допустима ли она? */
-
 a {
     text-decoration: none;
 }
@@ -46,9 +43,6 @@ a {
     color: #b2b2b2;
 }
 
-    /* ?По стайлгайду у ссылок в nav 4 состояния: покой, наведение(фокус?), нажатие и "активный, находимся на странице"
-     Первые 3 я сделала с помощью :hover, :focus и :active, а как сделать последнее? */
-
 
                                             /* Main */
 
@@ -62,11 +56,6 @@ a {
     background-position: 0px 532px, 50% 160px, 50% 50%;
     background-repeat: no-repeat, no-repeat, no-repeat;
 }
-
-/* ?Странное отображение welcome-to-sedona.png? 
-    ?Как убрать тонкую ченрую рамку по краю white-masl.svg?
-*/
-
 
 .about-sedona {
     font-size: 21px;
@@ -194,8 +183,6 @@ a {
     border: 2px solid #e5e5e5;
 }
 
-/* ?Как задать разные цвета для разных состояний иконки календаря, если это контекстное изображение? */
-
 .button {
     font: inherit;
     text-transform: uppercase;
@@ -259,7 +246,6 @@ a {
     list-style: none;
 }
 
-
 .twitter {
     background-color: #81b3d2;
     width: 46px;
@@ -267,6 +253,11 @@ a {
     background-image: url("../img/index/icon-twitter.svg");
     background-position: center center;
     background-repeat: no-repeat;
+
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .facebook {
@@ -276,6 +267,11 @@ a {
     background-image: url("../img/index/icon-fb.svg");
     background-position: center center;
     background-repeat: no-repeat;
+
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .youtube {
@@ -285,6 +281,11 @@ a {
     background-image: url("../img/index/icon-youtube.svg");
     background-position: center center;
     background-repeat: no-repeat;
+
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .twitter:hover,
@@ -295,8 +296,6 @@ a {
 .youtube:focus {
     background-color: #669ec0;
 }
-
-/* ?Иконки почему-то не реагируют на :focus, но реагируют на :hover? */
 
 .twitter:active {
     background-color: #5496bd;
@@ -319,7 +318,7 @@ a {
     background-repeat: no-repeat;
 }
 
-/* ?Как поменять цвет лого хтмл академии в разных состояниях, если это контекстное изображение?*/
+
 
 
                                             /* hotels main */
@@ -360,8 +359,6 @@ a {
     font: inherit;
     text-transform: uppercase;
 }
-
-    /* ?Как стилизовать чекбоксы и ползунок мне пока непонятно? */
 
 .wrap-sorting {
     background-color: #fefefe;
@@ -411,16 +408,75 @@ a {
     list-style: none;
 }
 
-/* ?Как задать разные цвета в разных состояниях сортировочных кнопок .sort-buttons если они являются контекстными изображениями? */
+.arrow-up::before {
+    content: url(../img/hotels/icon-arrow-up.svg);
+}
+
+.arrow-up:hover::before {
+    content: url(../img/hotels/icon-arrow-up-hover.svg);
+}
+
+.arrow-up:active::before {
+    content: url(../img/hotels/icon-arrow-up-active.svg);
+}
+
+.arrow-down::before {
+    content: url(../img/hotels/icon-arrow-down.svg);
+}
+
+.arrow-down:hover::before {
+    content: url(../img/hotels/icon-arrow-down-hover.svg);
+}
+
+.arrow-down:active::before {
+    content: url(../img/hotels/icon-arrow-down-active.svg);
+}
 
 .hotels-found {
+    width: 1200px;
+    height: 450px;
+    border-collapse: collapse;
+    border: 1px solid #e5e5e5;
     background-color: #fefefe;
     color: #333333;
     font-size: 14px;
     line-height: 21px;
+    border-right: none;
+    border-left: none;
 }
 
-/* ?Как сделать горизонтальные линии вокруг и в таблице? */
+/* Временные рамки для работы с таблицей*/
+
+/* td, th {
+    border: 1px solid black;
+} */
+
+/* Временные рамки для работы с таблицей*/
+
+.align-right {
+    text-align: right;
+    padding-right: 72px;
+    padding-top: 30px;
+}
+
+.hotels-found th {
+    padding-top: 30px;
+}
+
+.hotels-found td:first-child {
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+.rating {
+    display: block;
+}
+
+.hotels-found tr:nth-child(3n + 1) {
+    border-top: 1px solid #e5e5e5;
+}
 
 .hotels-found a {
     color: #000000;
@@ -438,7 +494,7 @@ a {
     color: #b2b2b2;
 }
 
-.hotels-found .rating {
+.rating {
     color: #666666;
     background-color: #f2f2f2;
     width: 110px;
@@ -446,6 +502,7 @@ a {
 }
 
 .hotels-found .button-more {
+    display: block;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
@@ -467,6 +524,7 @@ a {
 }
 
 .hotels-found .button-book {
+    display: block;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
