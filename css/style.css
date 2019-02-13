@@ -544,3 +544,143 @@ a {
     color: #847870;
     background-color: #503e33;
 }
+
+
+
+
+                                                            /* СЕТКА */
+
+
+body {
+    width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+
+.main-header {
+    margin-bottom: 0px;
+    min-height: 56px;
+    
+}
+
+.index-logo {
+    display: inline-block;
+}
+
+.main-navigation {
+    /* display: flex; */
+    /* flex-direction: column; */
+    
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    min-height: 56px;
+    display: flex;
+    margin-top: -80px;
+    background: #ffffff;
+
+    min-height:56px;
+    background-color: rgba(255, 230, 153, 0.3)
+}
+
+.site-navigation li {
+    width: 239px;
+    height: 56px;
+    
+}
+
+.site-navigation-wrapper-left {
+    width: 600px;
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    background: #ffffff;
+}
+
+.site-navigation-wrapper-right {
+    width: 600px;
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 244px;
+    background: #ffffff;
+}
+
+.welcome-images {
+    margin-top: -56px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.about-sedona {
+    margin-top: -210px;
+    background-color: white;
+    width: 100%;
+    height: 216px;
+    padding-top: 61px;
+}
+
+.advantages {
+    margin-top: -107px;
+    background-color: rgba(255, 230, 153, 0.3);
+}
+
+.advantages-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blue-bg {
+    width: 400px;
+    height: 256px;
+}
+
+
+.list-image-hotel {
+    width: 800px;
+    height: 256px;
+}
+
+.features .house::before {
+    content: url(../img/hotels/icon-house.svg);
+    width: 75px;
+    height: 72px;
+    /* Почему не работает(( */
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features li {
+    width: 400px;
+    height: 330px;
+    padding: 0;
+    margin: 0;
+}
+
+.advantages-list li:nth-child(n+6) {
+    width: 400px;
+    height: 256px;
+    padding: 0;
+    margin: 0;
+}

@@ -8,29 +8,32 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    
     <header class="main-header">
       <nav class="main-navigation">
-        <a>
+        <a class="index-logo">
           <img src="img/index/index-logo.png" width="140" height="72" alt="Логотип сайта города Седона">
         </a>
           <ul class="site-navigation">
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="hotels.html">Гостиницы</a>
-            </li>
+            <div class="site-navigation-wrapper-left">
+              <li>
+                <a href="#">Информация</a>
+              </li>
+              <li>
+                <a href="#">Фото и видео</a>
+              </li>
+            </div>
+            <div class="site-navigation-wrapper-right">
+              <li>
+                <a href="#">Карта штата</a>
+              </li>
+              <li>
+                <a href="hotels.html">Гостиницы</a>
+              </li>
+            </div>
           </ul>
         </nav>
     </header>
-    <main class="container">
+    <main class="main-container">
       <div class="welcome-images"></div>
       <h1 class="visually-hidden">Город Седона</h1>
       <p class="about-sedona">Седона — небольшой городок в Аризоне,
@@ -46,7 +49,7 @@
           <li class="list-image-hotel"></li>
           <li>
             <ul class="features">
-              <li>
+              <li class="house">
                 <h4>Жильё</h4>
                 Рекомендуем пожить в настоящем мотеле, всё как в кино!
               </li>
