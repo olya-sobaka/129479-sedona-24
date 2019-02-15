@@ -804,6 +804,15 @@ margin-right: auto;
     margin-top: 40px;
 }
 
+.map-bg {
+    position: relative;
+    z-index: 0;
+}
+
+.hotel-search {
+    z-index: 1;
+}
+
 .hotel-search-form {
     display: flex;
     flex-direction: column;
