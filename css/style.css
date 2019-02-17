@@ -9,6 +9,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0px;
     background-color: #f2f2f2;
+    box-sizing: border-box;
 }
 
 a {
@@ -61,7 +62,8 @@ a {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    text-align: center;
+    box-sizing: border-box;
+    padding: 30px 380px;
 }
 
 .advantages h2 {
@@ -86,6 +88,8 @@ a {
     background-color: #81b3d2;
     color: #ffffff;
 }
+
+
 
 .list-image-hotel {
     background-image: url("../img/index/hotel-bg.jpg");
@@ -142,19 +146,21 @@ a {
     /* Почему цвет фона не работает? */
 }
 
-.hotel-search h2 {
+.search-form-off {
     color: #ffffff;
     background-color: #766357;
     font-size: 21px;
     line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.hotel-search h2:hover,
-.hotel-search h2:focus {
+.search-form-off:hover,
+.search-form-off:focus {
     background-color: #604e43;
 }
 
-.hotel-search h2:active {
+.search-form-off:active {
     color: #847870;
     background-color: #503e33;
 }
@@ -217,6 +223,7 @@ a {
     line-height: 26px;
     width: 458px;
     height: 58px;
+    margin: 0;
 }
 
 .search-button:hover,
@@ -230,7 +237,7 @@ a {
 }
 
 .map-bg {
-    margin-top: -485px;
+    margin-top: -395px;
     width: 1200px;
     height: 594px;
     background-image: url("../img/index/map.jpg")
@@ -238,7 +245,8 @@ a {
 
                                           /* Футер */
 
-.main-footer span {
+.main-footer span,
+.inner-footer span {
     color: #000000;
     font-size: 21px;
     font-weight: 700;
@@ -331,6 +339,7 @@ a {
     background-color: #85a4c2;
     list-style: none;
     background-image: url(../img/hotels/mountains-blurry-bg.jpg);
+    background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -369,7 +378,7 @@ a {
 
 .found {
     color: #000000;
-    font-size: 21px;3
+    font-size: 21px;
     font-weight: 700;
     line-height: 26px;
 }
@@ -449,32 +458,16 @@ a {
 }
 
 /* Временные рамки для работы с таблицей*/
-
-/* td, th {
+/* 
+td, th {
     border: 1px solid black;
 } */
 
 /* Временные рамки для работы с таблицей*/
 
-.align-right {
-    text-align: right;
-    padding-right: 72px;
-    padding-top: 30px;
-}
-
-.hotels-found th {
-    padding-top: 30px;
-}
-
-.hotels-found td:first-child {
-    text-align: right;
-    padding-right: 30px;
-    padding-top: 15px;
-    padding-bottom: 12px;
-}
 
 .rating {
-    display: block;
+    display: inline-block;
 }
 
 .hotels-found tr:nth-child(3n + 1) {
@@ -568,8 +561,15 @@ body {
     min-height: 56px;
 }
 
+.index-logo {
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
 .main-navigation {
     background-color: white;
+    box-sizing: border-box;
 }
 
 .site-navigation {
@@ -581,11 +581,17 @@ body {
     margin-top: -80px;
     background: #ffffff;
     flex-wrap: nowrap;
-
+    position: relative;
     min-height:56px;
-
     /* Не могу понять как задать белый фон */
 }
+
+.site-navigation li {
+    background:#ffffff;
+    display: flex;
+    align-items: center;
+
+  }
 
 
 .site-navigation .left {
@@ -600,29 +606,13 @@ body {
 .site-navigation a {
     width: 239px;
     height: 56px;
-    display: block;
     height: 100%;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     /* Не получается выровнять текст ссылки посередине( */
 }
-
-/* .site-navigation-wrapper-left {
-    width: 600px;
-    height: 56px;
-    display: flex;
-    justify-content: flex-start;
-    background: #ffffff;
-}
-
-.site-navigation-wrapper-right {
-    width: 600px;
-    height: 56px;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 244px;
-    background: #ffffff;
-} */
 
 .welcome-images {
     margin-top: -56px;
@@ -642,8 +632,6 @@ body {
 .about-sedona {
     margin-top: -237px;
     background-color: white;
-    
-    /* height: 216px; */
     padding-top: 61px;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -662,13 +650,9 @@ body {
 .advantages h2 {
     margin: 0;
     padding: 0;
-    padding-top: 38px;
-    padding-bottom: 56px;
-    background-color: white;
-}
-
-.advantages {
-    margin-top: -107px;
+    padding-top: 27px;
+    padding-bottom: 51px;
+    background-color: #ffffff;
 }
 
 .advantages-list {
@@ -762,13 +746,18 @@ body {
 }
 
 .blue-bg p {
-width: 305px;
-margin-left: auto;
-margin-right: auto;
+    width: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26px;
+}
+
+.blue-bg h3 {
+    margin-top: 50px;
 }
 
 .advantages-list h3 {
-    margin-top: 50px;
+    margin-top: 47px;
     width: 160px;
     margin-left: auto;
     margin-right: auto;
@@ -779,6 +768,7 @@ margin-right: auto;
 }
 
 .advantages-list p {
+    margin-top: 26px;
     width: 265px;
     margin-left: auto;
     margin-right: auto;
@@ -786,13 +776,13 @@ margin-right: auto;
 
 .interested {
     background-color: #ffffff;
-    height: 295px;
+    height: 290px;
     width: 100%;
 }
 
 .interested b {
     display: block;
-    padding-top: 57px;
+    padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -801,41 +791,46 @@ margin-right: auto;
     width: 450px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 27px;
+    margin-bottom: 50px;
 }
 
-.map-bg {
-    position: relative;
-    z-index: 0;
-}
-
-.hotel-search {
-    z-index: 1;
-}
-
-.hotel-search-form {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -86px;
-    width: 568px;
-    height: 568px;
-    background-color: #ffffff;
-
-    /* Та же проблема с бэкграунд-колор */
-}
-
-.hotel-search-form h2 {
+.search-form-off {
+    border: none;
+    padding: 0;
     display: block;
     min-width: 568px;
     height: 86px;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-form-off h2 {
+    margin: 0;
+}
+
+.map-bg {
+    position: relative;
+    z-index: -1;
+}
+
+.hotel-search-form {
+    box-sizing: border-box;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 55px;
+    width: 568px;
+    height: 395px;
+    background-color: #ffffff;
 }
 
 .hotel-search-form label {
-    margin-top: 69px;
     margin: 0;
     width: 95px;
 }
@@ -865,9 +860,12 @@ margin-right: auto;
     height: 58px;
     margin-top: 54px;
     padding: 0;
-    margin-bottom: 55px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.form-half-width {
+    height: 40px;
 }
 
 .form-half-width button {
@@ -875,29 +873,79 @@ margin-right: auto;
     height: 38px;
 }
 
+.hotel-search-form .adults {
+    margin-left: 0;
+    margin-right: 41px;
+}
+
+.hotel-search-form .kids {
+    margin-left: 53px;
+    margin-right: 27px;
+}
+
 .main-footer {
     width: 1200px;
     min-height: 120px;
     display: flex;
-    padding: 35px 95px;
-    
-    /* Почему здесь паддинг делает футер больше, а не задает отступы для элементов внутри него? */
+    background-color: rgba(255,255,255,0.9);
+    box-sizing: border-box;
+    margin-top: -120px;
 }
 
-.main-footer span {
-margin: 0;
-padding: 0;
-width: 150px;
-height: 26px;
+.inner-footer {
+    width: 1200px;
+    min-height: 120px;
+    display: flex;
+    background-color: rgba(255,255,255,0.9);
+    box-sizing: border-box;
+}
+
+.main-footer .wrapper-left,
+.inner-footer .wrapper-left {
+    width: 400px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer .wrapper-middle,
+.inner-footer .wrapper-middle {
+    width: 400px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer .wrapper-right,
+.inner-footer .wrapper-right {
+    width: 400px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer > span,
+.inner-footer > span {
+    margin: 0;
+    padding: 0;
+    height: 26px;
 }
 
 .copyright {
     margin: 0;
     padding: 0;
     height: 50px;
-    width: 205px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
 
-    /* как выровнять текст website by? */
+.copyright span {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .social {
@@ -913,30 +961,125 @@ height: 26px;
                                                         /* Внутренняя страница */
 
 
-
-
-
-
-
-
-
-/* Временно для сетки */
-body > * {
-    background-color: rgba(63, 191, 146, 0.5);
+.search-filters .filter {
+    width: 1200px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body > * > * {
-    background-color: rgba(250, 200, 63, 0.5);
+.filter ul {
+    text-align: left;
 }
 
-body > * > * > * {
-    background-color: rgba(250, 63, 166, 0.5);
+.filter-infrastructure {
+    width: 240px;
+    text-align: left;
 }
 
-body > * > * > * > * {
-    background-color: rgba(79, 250, 63, 0.5);
+.filter-accommodation {
+    width: 240px;
 }
 
-body > * > * > * > * > * {
-    background-color: rgba(175, 63, 250, 0.5);
+.filer-price {
+    width: 330px;
 }
+
+.wrap-sorting {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 72px;
+    align-items: center;
+    width: 1200px;
+    height: 86px;
+}
+
+.sort-links {
+    display: flex;
+}
+
+.sort-buttons {
+    display: flex;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+
+    /* Кнопки сортировки переносятся на следующую строку, у них какой-то марджин, не могу найти, откуда он взялся */
+}
+
+.hotels-found tbody {
+    box-sizing: border-box;
+    padding: 30px 72px;
+}
+
+.hotels-found tr {
+    height: 50px;
+}
+
+.hotels-found .photo-cell {
+    width: 135px;
+    height: 90px;
+    padding-left: 72px;
+    padding-right: 30px;
+}
+
+.hotels-found th {
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.hotels-found .hotel-type-cell {
+    text-align: left;
+    vertical-align: top;
+    padding-top: 5px;
+    width: 100px;
+}
+
+.hotels-found .price-cell {
+    width: 100px;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    vertical-align: top;
+}
+
+.hotels-found .middle-row {
+    height: 30px;
+}
+
+.hotels-found .top-row {
+    height: 40px;
+}
+
+.hotels-found .more-cell {
+    vertical-align: top;
+    padding-top: 3px;
+}
+
+.hotels-found .book-cell {
+    vertical-align: top;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+.hotels-found .stars-cell {
+    text-align: right;
+    vertical-align: bottom;
+    padding-right: 72px;
+}
+
+.hotels-found .rating-cell {
+    text-align: right;
+    vertical-align: top;
+    padding-top: 5px;
+    padding-right: 72px;
+}
+
+.rating-cell span {
+    text-align: center;
+    vertical-align: middle;
+}
+/* Горжусь этой таблицей */
+
+/* Никак не получается выровнять текст по вертикали в ссылках и спанах */

@@ -90,12 +90,16 @@
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
+        <button type="button" class="search-form-off">
+            <h2>Поиск гостиницы в Седоне</h2>
+        </button>
       </div>
+      
       <section class="hotel-search">
         
           <form class="hotel-search-form" method="post" 
           action="https://echo.htmlacademy.ru">
-            <h2>Поиск гостиницы в Седоне</h2>
+            
             <label for="check-in-date">Дата заезда:</label>
             <input type="text" id="check-in-date" name="check-in-date" value="24 апреля 2019">
             <img src="img/index/icon-calendar.png" class="icon-calendar" alt="Иконка календаря">
@@ -103,47 +107,53 @@
             <input type="text" id="check-out-date" name="check-out-date" value="4 июля 2019">
             <img src="img/index/icon-calendar.png" class="icon-calendar" alt="Иконка календаря">
             <div class="form-half-width">
-              <label for="adults">Взрослые:</label>
+              <label for="adults" class="adultss">Взрослые:</label>
               <button type="button" class="button button-min">-</button>
               <input type="text" id="adults" value="2" readonly>
               <button type="button" class="button button-plus">+</button>
-              <label for="kids">Дети:</label>
+              <label for="kids" class="kids">Дети:</label>
               <button type="button" class="button button-min">-</button>
               <input type="text" id="kids" value="0" readonly>
               <button type="button" class="button button-plus">+</button>
             </div>
             <button class="button search-button" type="submit">Найти</button>
           </form>
-          <div class="map-bg"></div>
+          
       </section>
-      
+      <div class="map-bg"></div>
     </main>
     <footer class="main-footer">
-      <span>#VISITESEDONA</span>
-      <ul class="social">
-        <li>
-          <a href="#" class="twitter">
-            Седона в Твиттере
+      <div class="wrapper-left">
+        <span>#VISITSEDONA</span>
+      </div>
+      <div class="wrapper-middle">
+        <ul class="social">
+          <li>
+            <a href="#" class="twitter">
+              Седона в Твиттере
+            </a>
+          </li>
+          <li>
+            <a href="#" class="facebook">
+              Седона на Фейсбуке
+            </a>
+          </li>
+          <li>
+            <a href="#" class="youtube">
+              Седона на Ютубе
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper-right">
+        <p class="copyright">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="html-academy-logo" src="img/index/logo-academy.svg" width="115" height="41"
+            alt="Логотип HTML Академии">
           </a>
-        </li>
-        <li>
-          <a href="#" class="facebook">
-            Седона на Фейсбуке
-          </a>
-        </li>
-        <li>
-          <a href="#" class="youtube">
-            Седона на Ютубе
-          </a>
-        </li>
-      </ul>
-      <p class="copyright">
-        Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="html-academy-logo" src="img/index/logo-academy.svg" width="115" height="41"
-          alt="Логотип HTML Академии">
-        </a>
-      <p>
+        <p>
+      </div>
     </footer>
   </body>
 </html>
