@@ -91,34 +91,48 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <button type="button" class="search-form-off">
-            <h2>Поиск гостиницы в Седоне</h2>
+          Поиск гостиницы в Седоне
         </button>
       </div>
-      
       <section class="hotel-search">
-        
           <form class="hotel-search-form" method="post" 
           action="https://echo.htmlacademy.ru">
-            
-            <label for="check-in-date">Дата заезда:</label>
-            <input type="text" id="check-in-date" name="check-in-date" value="24 апреля 2019">
-            <img src="img/index/icon-calendar.png" class="icon-calendar" alt="Иконка календаря">
-            <label for="check-out-date">Дата выезда:</label>
-            <input type="text" id="check-out-date" name="check-out-date" value="4 июля 2019">
-            <img src="img/index/icon-calendar.png" class="icon-calendar" alt="Иконка календаря">
+            <fieldset class="fieldset-check-in">
+              <label for="check-in-date">Дата заезда:
+                <input type="text" id="check-in-date" name="check-in-date" value="24 апреля 2019">
+                <img src="img/index/icon-calendar.png" class="icon-calendar-in" alt="Иконка календаря">
+              </label>
+            </fieldset>
+            <fieldset class="fieldset-check-out">
+              <label for="check-out-date">Дата выезда:
+                <input type="text" id="check-out-date" name="check-out-date" value="4 июля 2019">
+                <img src="img/index/icon-calendar.png" class="icon-calendar-out" alt="Иконка календаря">
+              </label>
+            </fieldset>
             <div class="form-half-width">
-              <label for="adults" class="adultss">Взрослые:</label>
-              <button type="button" class="button button-min">-</button>
-              <input type="text" id="adults" value="2" readonly>
-              <button type="button" class="button button-plus">+</button>
-              <label for="kids" class="kids">Дети:</label>
-              <button type="button" class="button button-min">-</button>
-              <input type="text" id="kids" value="0" readonly>
-              <button type="button" class="button button-plus">+</button>
+              <fieldset class="fieldset-adults">
+                <label for="adults" class="adultss">Взрослые:</label>
+                <div class="button-wrapper">
+                  <button type="button" class="button button-min">-</button>
+                </div>
+                <input type="text" id="adults" value="2" readonly>
+                <div class="button-wrapper">
+                  <button type="button" class="button button-plus">+</button>
+                </div>
+              </fieldset>
+              <fieldset class="fieldset-kids">
+                <label for="kids" class="kids">Дети:</label>
+                <div class="button-wrapper">
+                  <button type="button" class="button button-min">-</button>
+                </div>
+                <input type="text" id="kids" value="0" readonly>
+                <div class="button-wrapper">
+                  <button type="button" class="button button-plus">+</button>
+                </div>
+              </fieldset>
             </div>
             <button class="button search-button" type="submit">Найти</button>
           </form>
-          
       </section>
       <div class="map-bg"></div>
     </main>

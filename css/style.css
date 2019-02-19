@@ -374,6 +374,9 @@ a {
 
 .wrap-sorting {
     background-color: #fefefe;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 87px;
 }
 
 .found {
@@ -381,6 +384,7 @@ a {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    margin-right: 50px;
 }
 
 .sort {
@@ -388,6 +392,7 @@ a {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
+    margin-right: 40px;
 }
 
 .sort-links {
@@ -495,6 +500,9 @@ td, th {
     background-color: #f2f2f2;
     width: 110px;
     height: 27px;
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .hotels-found .button-more {
@@ -506,6 +514,9 @@ td, th {
     background-color: #81b3d2;
     width: 110px;
     height: 27px;
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .hotels-found .button-more:hover,
@@ -528,6 +539,9 @@ td, th {
     background-color: #766357;
     width: 142px;
     height: 27px;
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .hotels-found .button-book:hover,
@@ -553,6 +567,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #f2f2f2;
+    box-sizing: border-box;
+
 }
 
 
@@ -562,14 +578,13 @@ body {
 }
 
 .index-logo {
-    /* position: absolute;
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%); */
+    transform: translateX(-50%);
 }
 
 .main-navigation {
-    background-color: white;
-    box-sizing: border-box;
+    position: relative;
 }
 
 .site-navigation {
@@ -578,19 +593,14 @@ body {
     width: 1200px;
     min-height: 56px;
     display: flex;
-    margin-top: -80px;
     background: #ffffff;
-    flex-wrap: nowrap;
-    position: relative;
     min-height:56px;
-    /* Не могу понять как задать белый фон */
 }
 
 .site-navigation li {
     background:#ffffff;
     display: flex;
     align-items: center;
-
   }
 
 
@@ -883,6 +893,64 @@ body {
     margin-right: 27px;
 }
 
+.hotel-search fieldset {
+    border: none;
+}
+
+.fieldset-check-in {
+    width: 460px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.fieldset-check-out {
+    width: 460px;
+    height: 45px;
+    padding: 0;
+    position: relative;
+    margin-bottom: 22px;
+}
+.fieldset-check-in input,
+.fieldset-check-out input {
+    margin-left: 10px;
+}
+
+.button-wrapper {
+    display: flex;
+    width: 230px;
+    height: 45px;
+    padding: 0;
+    justify-content: center;
+}
+
+.fieldset-adults {
+    display: flex;
+    width: 230px;
+    height: 45px;
+    padding: 0;
+    justify-content: center;
+}
+
+.fieldset-kids {
+    display: flex;
+}
+
+
+.icon-calendar-in {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+
+.icon-calendar-out {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+
 .main-footer {
     width: 1200px;
     min-height: 120px;
@@ -997,15 +1065,21 @@ body {
 
 .sort-links {
     display: flex;
+    padding: 0;
+    width: 240px;
+    justify-content: space-between;
+    margin-right: 252px;
 }
 
 .sort-buttons {
     display: flex;
-    width: 50px;
+    width: 34px;
+    height: 50px;
     margin: 0;
     padding: 0;
-
-    /* Кнопки сортировки переносятся на следующую строку, у них какой-то марджин, не могу найти, откуда он взялся */
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 252px;
 }
 
 .hotels-found tbody {
@@ -1080,6 +1154,5 @@ body {
     text-align: center;
     vertical-align: middle;
 }
-/* Горжусь этой таблицей */
 
 /* Никак не получается выровнять текст по вертикали в ссылках и спанах */
