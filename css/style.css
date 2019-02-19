@@ -893,11 +893,7 @@ body {
     margin-right: 27px;
 }
 
-.hotel-search fieldset {
-    border: none;
-}
-
-.fieldset-check-in {
+.check-in-wrapper {
     width: 460px;
     height: 45px;
     padding: 0;
@@ -906,15 +902,15 @@ body {
     margin-bottom: 22px;
 }
 
-.fieldset-check-out {
+.check-out-wrapper {
     width: 460px;
     height: 45px;
     padding: 0;
     position: relative;
     margin-bottom: 22px;
 }
-.fieldset-check-in input,
-.fieldset-check-out input {
+.check-in-wrapper input,
+.check-out-wrapper input {
     margin-left: 10px;
 }
 
@@ -926,7 +922,7 @@ body {
     justify-content: center;
 }
 
-.fieldset-adults {
+.adults-wrapper {
     display: flex;
     width: 230px;
     height: 45px;
@@ -934,7 +930,7 @@ body {
     justify-content: center;
 }
 
-.fieldset-kids {
+.kids-wrapper {
     display: flex;
 }
 
