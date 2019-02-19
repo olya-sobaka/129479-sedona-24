@@ -119,6 +119,7 @@ a {
 .features li {
     color: #333333;
     font-weight: 400;
+    position: relative;
 }
 
 .features h4 {
@@ -126,6 +127,8 @@ a {
     font-size: 21px;
     font-weight: 700;
     line-height: 21px;
+    margin: 0;
+    margin-top: 160px;
 }
 
 .container {
@@ -568,7 +571,6 @@ body {
     margin-right: auto;
     background-color: #f2f2f2;
     box-sizing: border-box;
-
 }
 
 
@@ -585,6 +587,8 @@ body {
 
 .main-navigation {
     position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .site-navigation {
@@ -594,35 +598,42 @@ body {
     min-height: 56px;
     display: flex;
     background: #ffffff;
-    min-height:56px;
+    
 }
 
 .site-navigation li {
     background:#ffffff;
     display: flex;
     align-items: center;
+    flex-basis: 20%;
   }
 
-
-.site-navigation .left {
-    margin-right: 122px;
+.site-navigation .photo {
+    justify-content: flex-start;
+    margin-right: auto;
 }
 
-.site-navigation .right {
-    margin-left: 122px;
-    width: 239px;
+.site-navigation .map {
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
 .site-navigation a {
+    box-sizing: border-box;
     width: 239px;
-    height: 56px;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* Не получается выровнять текст ссылки посередине( */
+    display: block;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
+.hotels a {
+    padding-left: 85px;
+    padding-right: 70px;
+}
+/* А так нормально? */
 
 .welcome-images {
     margin-top: -56px;
@@ -694,10 +705,13 @@ body {
     display: block;
     width: 75px;
     height: 72px;
-    margin-left: auto;
+    position: absolute;
+    top: 60px;
+    left: 163px;
+    /* margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    margin-bottom: 29px;
+    margin-bottom: 29px; */
 }
 
 .features li:nth-of-type(2)::before {
@@ -705,10 +719,13 @@ body {
     display: block;
     width: 75px;
     height: 72px;
-    margin-left: auto;
+    position: absolute;
+    top: 60px;
+    left: 163px;
+    /* margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    margin-bottom: 29px;
+    margin-bottom: 29px; */
 }
 
 .features li:nth-of-type(3)::before {
@@ -716,10 +733,13 @@ body {
     display: block;
     width: 75px;
     height: 72px;
-    margin-left: auto;
+    position: absolute;
+    top: 57px;
+    left: 163px;
+    /* margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    margin-bottom: 29px;
+    margin-bottom: 29px; */
 }
 
 .features {
@@ -849,6 +869,14 @@ body {
     width: 346px;
     height: 38px;
     margin: 0;
+    box-sizing: border-box;
+    padding: 13px;
+    
+}
+
+.hotel-search-form input:first-child,
+.hotel-search-form input:nth-child(2) {
+    padding-left: 15px;
 }
 
 .hotel-search-form img {
@@ -876,20 +904,22 @@ body {
 
 .form-half-width {
     height: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .form-half-width button {
     width: 38px;
     height: 38px;
+    margin: 0;
 }
 
 .hotel-search-form .adults {
-    margin-left: 0;
-    margin-right: 41px;
+    margin-right: 40px;
 }
 
 .hotel-search-form .kids {
-    margin-left: 53px;
     margin-right: 27px;
 }
 
@@ -916,35 +946,38 @@ body {
 
 .button-wrapper {
     display: flex;
-    width: 230px;
-    height: 45px;
-    padding: 0;
     justify-content: center;
 }
 
 .adults-wrapper {
     display: flex;
     width: 230px;
-    height: 45px;
+    height: 38px;
     padding: 0;
     justify-content: center;
+    align-items: center;
 }
 
 .kids-wrapper {
     display: flex;
+    width: 180px;
+    height: 38px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .icon-calendar-in {
     position: absolute;
     top: 8px;
-    right: 15px;
+    right: 10px;
 }
 
 .icon-calendar-out {
     position: absolute;
     top: 8px;
-    right: 15px;
+    right: 10px;
 }
 
 .main-footer {
@@ -1150,5 +1183,3 @@ body {
     text-align: center;
     vertical-align: middle;
 }
-
-/* Никак не получается выровнять текст по вертикали в ссылках и спанах */
