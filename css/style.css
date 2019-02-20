@@ -593,47 +593,43 @@ body {
 
 .site-navigation {
     margin: 0;
-    padding: 0;
+    padding: 0 73px;
     width: 1200px;
     min-height: 56px;
     display: flex;
     background: #ffffff;
+    box-sizing: border-box;
     
 }
 
 .site-navigation li {
     background:#ffffff;
     display: flex;
-    align-items: center;
-    flex-basis: 20%;
+    flex-basis: 23%;
   }
 
-.site-navigation .photo {
+.site-navigation .photo ,
+.site-navigation .info {
     justify-content: flex-start;
-    margin-right: auto;
+}
+
+.site-navigation .map ,
+.site-navigation .hotels {
+    justify-content: flex-end;
+    
 }
 
 .site-navigation .map {
-    justify-content: flex-end;
-    margin-left: auto;
+margin-left: auto;
 }
 
 .site-navigation a {
     box-sizing: border-box;
-    width: 239px;
     height: 100%;
     display: block;
     padding-top: 13px;
     padding-bottom: 17px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
-
-.hotels a {
-    padding-left: 85px;
-    padding-right: 70px;
-}
-/* А так нормально? */
 
 .welcome-images {
     margin-top: -56px;
@@ -799,7 +795,7 @@ body {
 
 .advantages-list p {
     margin-top: 26px;
-    width: 265px;
+    width: 285px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -871,6 +867,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     padding: 13px;
+    padding-right: 40px;
     
 }
 
@@ -1043,6 +1040,7 @@ body {
 .copyright span {
     font-size: 14px;
     font-weight: 400;
+    margin-right: 8px;
 }
 
 .social {
@@ -1064,6 +1062,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    padding: 30px 72px;
 }
 
 .filter ul {
