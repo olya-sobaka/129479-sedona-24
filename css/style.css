@@ -9,6 +9,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 0px;
     background-color: #f2f2f2;
+
+    box-sizing: border-box;
+    width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
     box-sizing: border-box;
 }
 
@@ -17,6 +24,11 @@ a {
 }
 
                                             /* Хедер */
+
+.main-header {
+    margin-bottom: 0px;
+    min-height: 56px;
+}
 
 .main-navigation {
     font-size: 14px;
@@ -564,20 +576,8 @@ td, th {
                                                             /* СЕТКА */
 
 
-body {
-    width: 1200px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f2f2f2;
-    box-sizing: border-box;
-}
 
 
-.main-header {
-    margin-bottom: 0px;
-    min-height: 56px;
-}
 
 .index-logo {
     position: absolute;
@@ -611,24 +611,18 @@ body {
 .site-navigation .photo ,
 .site-navigation .info {
     justify-content: flex-start;
+    align-items: center;
 }
 
 .site-navigation .map ,
 .site-navigation .hotels {
     justify-content: flex-end;
+    align-items: center;
     
 }
 
 .site-navigation .map {
 margin-left: auto;
-}
-
-.site-navigation a {
-    box-sizing: border-box;
-    height: 100%;
-    display: block;
-    padding-top: 13px;
-    padding-bottom: 17px;
 }
 
 .welcome-images {
@@ -660,8 +654,6 @@ margin-left: auto;
     margin-left: auto;
     margin-right: auto;
     width: 440px;
-
-    /* не получается задать ширину */
 }
 
 .advantages h2 {
