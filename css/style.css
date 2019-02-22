@@ -17,6 +17,7 @@ body {
     margin-right: auto;
     background-color: #f2f2f2;
     box-sizing: border-box;
+    box-shadow: 0 0 20px #dcdcdc;
 }
 
 a {
@@ -64,10 +65,11 @@ a {
     height: 800px;
     background-image: 
     url("../img/index/white-mask.svg"), 
-    url("../img/index/welcome-to-sedona.svg"), 
+    url("../img/index/welcome-to-sedona.svg"),
     url("../img/index/bg.jpg");
-    background-position: 0px 506px, 50% 133px, 50% -27px;
+    background-position: 0px 507px, 50% 133px, 50% -27px;
     background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 1201px 59px, 459px 353px, 1200px 800px;
 }
 
 .about-sedona {
@@ -100,8 +102,6 @@ a {
     background-color: #81b3d2;
     color: #ffffff;
 }
-
-
 
 .list-image-hotel {
     background-image: url("../img/index/hotel-bg.jpg");
@@ -359,11 +359,9 @@ a {
     background-repeat: no-repeat;
 }
 
-.filter fieldset {
-    border: none;
-}
 
-.filter legend {
+
+.filter-title {
     font-size: 16px;
     line-height: 21px;
 }
@@ -380,11 +378,13 @@ a {
 .filter-button {
     color: #ffffff;
     border: 2px solid #ffffff;
+    border-radius: 2px;
     background-color: transparent;
-    width: 133px;
-    height: 32px;
+    width: 136px;
+    height: 35px;
     font: inherit;
     text-transform: uppercase;
+    margin-left: -10px;
 }
 
 .wrap-sorting {
@@ -1053,10 +1053,16 @@ margin-left: auto;
     height: 215px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     box-sizing: border-box;
-    padding: 30px 72px;
+    padding: 30px 73px;
 }
+
+.filter-title {
+    text-align: left;
+    margin-bottom: 9px;
+}
+        
 
 .filter ul {
     text-align: left;
@@ -1067,12 +1073,111 @@ margin-left: auto;
     text-align: left;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .filter-accommodation {
     width: 240px;
 }
 
 .filer-price {
-    width: 330px;
+    width: 318px;
+    min-height: 180px;
+    margin-left: auto;
+}
+
+.price-controls {
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+.price-controls::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.price-controls label {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.price-controls input {
+    width: 67px;
+    margin-left: 4px;
+}
+
+.price-min {
+    padding-left: 65px;
+}
+
+.price-max {
+    padding-left: 58px;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+    position: absolute;
+}
+
+.range-toggle-min {
+    top: -9px;
+}
+
+.range-toggle-max {
+    top: -9px;
+    left: 80%;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
 }
 
 .wrap-sorting {
@@ -1174,4 +1279,26 @@ margin-left: auto;
 .rating-cell span {
     text-align: center;
     vertical-align: middle;
+}
+
+.icon-calendar path {
+    fill: #cacaca;
+}
+
+.icon-calendar:hover path,
+.icon-calendar:focus path {
+    fill: #000000;
+}
+
+.icon-calendar:active path {
+    fill: #81b3d2;
+}
+
+.html-academy-logo:hover path,
+.html-academy-logo:focus path {
+    fill: #81b3d2;
+}
+
+.html-academy-logo:active path {
+    fill: #c5c3c4;
 }
