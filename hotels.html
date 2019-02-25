@@ -40,16 +40,22 @@
           <div class="filter-title">Инфраструктура:</div>
           <ul>
             <li>
-              <input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
-              <label for="swimming-pool">Бассейн</label>
+              <label for="swimming-pool" class="checkbox">Бассейн
+                <input type="checkbox" name="swimming-pool" id="swimming-pool" class="visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+              </label>
             </li>
             <li>
-              <input type="checkbox" name="parking" id="parking">
-              <label for="parking">Парковка</label>
+              <label for="parking" class="checkbox">Парковка
+                <input type="checkbox" name="parking" id="parking" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+              </label>
             </li>
             <li>
-              <input type="checkbox" name="wi-fi" id="wi-fi">
-              <label for="wi-fi">Wi-fi</label>
+              <label for="wi-fi" class="checkbox">Wi-fi
+                <input type="checkbox" name="wi-fi" id="wi-fi" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+              </label>
             </li>
           </ul>
         </div>
@@ -57,16 +63,22 @@
           <div class="filter-title">Тип жилья:</div>
           <ul>
             <li>
-              <input type="checkbox" name="hotel" id="hotel" checked>
-              <label for="hotel">Гостиница</label>
+              <label for="hotel" class="checkbox">Гостиница
+                <input type="checkbox" name="hotel" id="hotel" class="visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+              </label>
             </li>
             <li>
-              <input type="checkbox" name="motel" id="motel" checked>
-              <label for="motel">Мотель</label>
+              <label for="motel" class="checkbox">Мотель
+                <input type="checkbox" name="motel" id="motel" class="visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+              </label>
             </li>
             <li>
-              <input type="checkbox" name="apartment" id="apartment" checked>
-              <label for="apartment">Апартаменты</label>
+              <label for="apartment" class="checkbox">Апартаменты
+                <input type="checkbox" name="apartment" id="apartment" class="visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+              </label>
             </li>
           </ul>
         </div>
@@ -113,7 +125,7 @@
               </svg>
             </a>
           </li>
-          <li class="arrow-down">
+          <li class="arrow-down button-active">
             <a href="#" aria-label="Сортировать по убыванию">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#231F20" d="M5.5 10L0 0h11"/>
