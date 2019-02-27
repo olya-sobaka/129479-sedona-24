@@ -103,13 +103,16 @@ a {
 .site-navigation .info {
     justify-content: flex-start;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .site-navigation .map ,
 .site-navigation .hotels {
     justify-content: flex-end;
     align-items: center;
-    
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .site-navigation .map {
@@ -780,7 +783,6 @@ padding-right: 30px;
     background-repeat: no-repeat;
     width: 1200px;
     display: flex;
-    justify-content: center;
     box-sizing: border-box;
     padding: 30px 73px 6px;
     
@@ -1012,22 +1014,18 @@ padding-top: 14px;
     color: #b2b2b2;
     font-size: 12px;
     line-height: 18px;
-    text-decoration:underline;
-    text-decoration-style: dotted;
-    text-decoration-color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-link:hover,
 .sort-link:focus {
     color: #81b3d2;
-    text-decoration:underline;
-    text-decoration-style: dotted;
-    text-decoration-color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-link:active {
     color: #000000;
-    text-decoration: none;
+    border-bottom: none;
 }
 
 .sort-buttons {
