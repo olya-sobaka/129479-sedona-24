@@ -256,16 +256,16 @@ padding-right: 30px;
     font-weight: 700;
     line-height: 21px;
     margin-top: 47px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 125px;
+    padding-right: 124px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .advantages-list p {
-    margin-top: 26px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 24px;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -446,8 +446,7 @@ padding-right: 30px;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
-
-    width: 346px;
+    width: 350px;
     height: 38px;
     margin: 0;
     -webkit-box-sizing: border-box;
@@ -554,19 +553,13 @@ padding-right: 30px;
 }
 
 .hotel-search-form .adults {
-    margin-right: 32px;
+    margin-right: 35px;
 }
 
 .adults-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 230px;
-    height: 38px;
-    padding: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -580,12 +573,6 @@ padding-right: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 180px;
-    height: 38px;
-    height: 38px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -601,7 +588,7 @@ padding-right: 30px;
 
 .check-out-wrapper {
     width: 100%;
-    padding: 0;
+    margin-top: 5px;
     position: relative;
     margin-bottom: 28px;
 }
@@ -838,11 +825,11 @@ padding-right: 30px;
 .copyright span {
     font-size: 14px;
     font-weight: 400;
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .copyright a {
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 3px;
 }
 
@@ -1225,7 +1212,7 @@ padding-top: 14px;
 }
 
 .hotels-found tr {
-    height: 50px;
+    height: 60px;
 }
 
 .hotels-found .photo-cell {
@@ -1239,32 +1226,32 @@ padding-top: 14px;
 .hotels-found th {
     vertical-align: bottom;
     text-align: left;
-    padding-top: 18px;
+    padding-top: 23px;
     padding-right: 20px;
 }
 
 .hotels-found .hotel-type-cell {
     text-align: left;
     vertical-align: top;
-    padding-top: 5px;
+    padding-top: 8px;
     width: 100px;
 }
 
 .hotels-found .price-cell {
     width: 100px;
     text-align: left;
-    padding-top: 5px;
+    padding-top: 8px;
     padding-left: 5px;
     padding-right: 200px;
     vertical-align: top;
 }
 
 .hotels-found .middle-row {
-    height: 30px;
+    height: 40px;
 }
 
 .hotels-found .top-row {
-    height: 40px;
+    height: 50px;
 }
 
 .hotels-found .more-cell {
@@ -1346,6 +1333,8 @@ padding-top: 14px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 3px 10px;
+
+    /* Если ставлю этой кнопке min-width вместо width, то она расползается в ширину */
 }
 
 .hotels-found .button-book:hover,
@@ -1359,13 +1348,6 @@ padding-top: 14px;
     background-color: #503e33;
 }
 
-/* 
-1.в "информация" и "гостиницы" в блоке навигации не переносится текст, если добавить его много,
- при этом он переносится, если начать переполнять с "фото и видео" или "карта штата". 
- Не могу понять, почему так происходитю
-2. кнопка "забронировать" в таблице - если ставлю ей min-height, то она расползается в ширину
-3. из кнопки Найти в форме поиска гостиниц выпадает текст при переполнении, не пойму почему 
-*/
 
 
 
