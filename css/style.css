@@ -90,6 +90,12 @@ a {
     color: #b2b2b2;
 }
 
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.site-navigation-current a:active {
+    color: #766357;
+}
+
 .index-logo {
     position: absolute;
     left: 50%;
@@ -147,8 +153,9 @@ a {
 .welcome-images {
     width: 1200px;
     height: 800px;
+    background-color: #85a4c2;
     background-image: url("../img/index/white-mask.svg"), url("../img/index/welcome-to-sedona.svg"), url("../img/index/bg.jpg");
-    background-position: 0px 507px, 50% 133px, 50% -27px;
+    background-position: 0px 507px, 50% 132px, 50% -27px;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 1201px 59px, 459px 353px, 1200px 800px;
     margin-top: -56px;
@@ -161,7 +168,7 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 30px 380px;
-    margin-top: -237px;
+    margin-top: -238px;
     background-color: white;
     padding-top: 61px;
     padding-bottom: 0;
@@ -185,7 +192,8 @@ a {
     text-align: center;
     color: #333333;
     margin: 0;
-    padding: 27px 73px 51px 73px;
+    margin-top: -1px;
+    padding: 29px 78px 53px 78px;
     background-color: #ffffff;
 }
 
@@ -203,11 +211,20 @@ a {
     flex-wrap: wrap;
 }
 
+.advantages-list li {
+    min-height: 256px;
+}
+
 .advantages-list li:nth-child(n+6) {
     width: 400px;
     padding: 0;
-    padding-bottom: 44px;
     margin: 0;
+}
+
+.advantages-list p {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blue-bg {
@@ -229,6 +246,7 @@ a {
 }
 
 .list-image-hotel {
+    background-color: #907968;
     background-image: url("../img/index/hotel-bg.jpg");
     background-repeat: no-repeat;
     width: 800px;
@@ -236,6 +254,7 @@ a {
 }
 
 .list-image-mountains {
+    background-color: #735749;
     background-image: url("../img/index/small-mountains-bg.jpg");
     background-repeat: no-repeat;
     width: 800px;
@@ -255,10 +274,6 @@ a {
 
 .advantages-list p {
     margin-top: 24px;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .advantages-list span {
@@ -363,9 +378,9 @@ a {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 26px;
-    margin-bottom: 20px;
-    padding: 10px 100px 20px 100px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    padding: 10px 120px 20px 120px;
 }
 
 /* Форма поиска гостиниц */
@@ -438,12 +453,11 @@ a {
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
-    width: 350px;
+    width: 346px;
     height: 38px;
     margin: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 13px;
     padding-right: 40px;
 }
 
@@ -468,7 +482,7 @@ a {
 }
 
 .hotel-search-form button {
-    margin-top: 54px;
+    margin-top: 53px;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
@@ -509,6 +523,8 @@ a {
 .button-plus {
     background-color: #f2f2f2;
     color: #a9a9a9;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .button-min:hover,
@@ -545,7 +561,7 @@ a {
 }
 
 .hotel-search-form .adults {
-    margin-right: 35px;
+    margin-right: 40px;
 }
 
 .adults-wrapper {
@@ -575,7 +591,7 @@ a {
     padding: 0;
     margin: 0;
     position: relative;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 }
 
 .check-out-wrapper {
@@ -587,18 +603,18 @@ a {
 
 .check-in-wrapper input,
 .check-out-wrapper input {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .icon-calendar-in {
     position: absolute;
-    top: 8px;
+    top: 7px;
     right: 10px;
 }
 
 .icon-calendar-out {
     position: absolute;
-    top: 8px;
+    top: 7px;
     right: 10px;
 }
 
@@ -804,12 +820,12 @@ a {
 .copyright span {
     font-size: 14px;
     font-weight: 400;
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 .copyright a {
-    margin-top: 6px;
-    margin-left: 3px;
+    margin-top: 7px;
+    margin-left: 5px;
 }
 
 .html-academy-logo:hover path,
@@ -858,7 +874,7 @@ a {
 
 .filter-infrastructure {
     text-align: left;
-    margin-right: 118px;
+    margin-right: 120px;
     padding-bottom: 0;
 }
 
