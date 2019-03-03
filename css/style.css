@@ -592,15 +592,6 @@ a {
     margin-left: 10px;
 }
 
-.button-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
 .icon-calendar-in {
     position: absolute;
     top: 8px;
