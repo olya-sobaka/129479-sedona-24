@@ -386,7 +386,6 @@ a {
 /* Форма поиска гостиниц */
 
 .map-bg {
-    margin-top: -395px;
     width: 1200px;
     height: 594px;
     background-image: url("../img/index/map.jpg");
@@ -394,7 +393,15 @@ a {
     z-index: -1;
 }
 
+.hotel-search {
+    position: relative;
+    margin-top: -115px;
+}
+
 .hotel-search-form {
+    position: absolute;
+    top: 86px;
+    left: 316px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -413,7 +420,7 @@ a {
     background-color: #ffffff;
 }
 
-.search-form-off {
+.search-form-toggle {
     color: #ffffff;
     background-color: #766357;
     font-size: 21px;
@@ -629,6 +636,10 @@ a {
 
 .icon-calendar:active path {
     fill: #81b3d2;
+}
+
+.hotel-search-hide {
+    margin-top: -395px;
 }
 
 /* Футер */
