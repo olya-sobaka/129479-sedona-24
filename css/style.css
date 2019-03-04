@@ -921,11 +921,11 @@ a {
     border-radius: 4px;
 }
 
-.checkbox input[type="checkbox"]:disabled+.checkbox-indicator {
+input[type="checkbox"]:disabled+.checkbox-indicator {
     border-color: #6a6a6a;
 }
 
-.checkbox input[type="checkbox"]:checked:disabled+.checkbox-indicator {
+input[type="checkbox"]:checked:disabled+.checkbox-indicator {
     border: none;
     background-image: url(../img/hotels/checkbox-on-disabled.svg);
     background-repeat: no-repeat;
@@ -933,7 +933,7 @@ a {
     height: 23px;
 }
 
-.checkbox input[type="checkbox"]:checked+.checkbox-indicator {
+input[type="checkbox"]:checked+.checkbox-indicator {
     border: none;
     background-image: url(../img/hotels/checkbox-on.svg);
     background-repeat: no-repeat;
