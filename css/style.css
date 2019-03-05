@@ -17,8 +17,8 @@ body {
     margin-right: auto;
     background-color: #f2f2f2;
     box-sizing: border-box;
-    -webkit-box-shadow: 0 0 20px #dcdcdc;
-            box-shadow: 0 0 20px #dcdcdc;
+    -webkit-box-shadow: 0 0 25px #c4c4c4;
+            box-shadow: 0 0 25px #c4c4c4;
 }
 
 a {
@@ -385,18 +385,27 @@ a {
 
 /* Форма поиска гостиниц */
 
-.map-bg {
+/* .map-bg {
     width: 1200px;
     height: 594px;
     background-image: url("../img/index/map.jpg");
     position: relative;
-    z-index: -1;
+    z-index: -2;
+} */
+
+.map-interactive {
+    z-index: -3;
 }
 
 .hotel-search {
     position: relative;
     margin-top: -115px;
 }
+@-moz-document url-prefix() {
+    .hotel-search {
+        top: 28px;
+    }
+  }
 
 .hotel-search-form {
     position: absolute;
@@ -418,6 +427,13 @@ a {
     padding: 55px;
     width: 568px;
     background-color: #ffffff;
+    z-index: -1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+            transition-duration: 1s;
 }
 
 .search-form-toggle {
@@ -433,14 +449,15 @@ a {
     min-height: 86px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
-.search-form-off:hover,
-.search-form-off:focus {
+.search-form-toggle:hover,
+.search-form-toggle:focus {
     background-color: #604e43;
 }
 
-.search-form-off:active {
+.search-form-toggle:active {
     color: #847870;
     background-color: #503e33;
 }
@@ -610,7 +627,7 @@ a {
 
 .check-in-wrapper input,
 .check-out-wrapper input {
-    margin-left: 15px;
+    margin-left: 13px;
 }
 
 .icon-calendar-in {
@@ -639,7 +656,12 @@ a {
 }
 
 .hotel-search-hide {
-    margin-top: -395px;
+    -webkit-transform: translateY(-420px);
+        -ms-transform: translateY(-420px);
+            transform: translateY(-420px);
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
 }
 
 /* Футер */
