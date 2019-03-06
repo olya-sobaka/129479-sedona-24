@@ -385,27 +385,25 @@ a {
 
 /* Форма поиска гостиниц */
 
-/* .map-bg {
+.map-bg {
     width: 1200px;
     height: 594px;
+    background-color: #dce3c7;
     background-image: url("../img/index/map.jpg");
     position: relative;
     z-index: -2;
-} */
-
-.map-interactive {
-    z-index: -3;
 }
 
 .hotel-search {
     position: relative;
     margin-top: -115px;
 }
+
 @-moz-document url-prefix() {
     .hotel-search {
         top: 28px;
     }
-  }
+}
 
 .hotel-search-form {
     position: absolute;
