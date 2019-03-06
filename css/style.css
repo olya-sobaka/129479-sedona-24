@@ -444,6 +444,8 @@ a {
 
 .search-form-toggle {
     position: relative;
+-webkit-box-sizing: border-box;
+    box-sizing: border-box;
     color: #ffffff;
     background-color: #766357;
     font-size: 21px;
@@ -456,6 +458,8 @@ a {
     min-height: 86px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
     cursor: pointer;
     z-index: 3;
 }
