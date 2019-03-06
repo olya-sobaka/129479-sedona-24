@@ -186,6 +186,7 @@ a {
 /* Список преимуществ */
 
 .advantages {
+    position: relative;
     z-index: 2;
 }
 
@@ -365,6 +366,7 @@ a {
 }
 
 .interested {
+    position: relative;
     background-color: #ffffff;
     min-height: 290px;
     width: 100%;
@@ -391,6 +393,7 @@ a {
 /* Форма поиска гостиниц */
 
 .map-bg {
+    position: relative;
     width: 1200px;
     height: 594px;
     background-color: #dce3c7;
@@ -440,6 +443,7 @@ a {
 }
 
 .search-form-toggle {
+    position: relative;
     color: #ffffff;
     background-color: #766357;
     font-size: 21px;
@@ -671,6 +675,7 @@ a {
 /* Футер */
 
 .main-footer {
+    position: relative;
     width: 1200px;
     min-height: 120px;
     display: -webkit-box;
