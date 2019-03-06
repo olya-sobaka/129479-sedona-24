@@ -434,12 +434,12 @@ a {
     width: 568px;
     background-color: #ffffff;
     z-index: 1;
-    -webkit-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-            transform: translateY(0px);
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-            transition-duration: 1s;
+    -webkit-transform: translateY(-420px);
+    -ms-transform: translateY(-420px);
+        transform: translateY(-420px);
+-webkit-transition-duration: 1s;
+     -o-transition-duration: 1s;
+        transition-duration: 1s;
 }
 
 .search-form-toggle {
@@ -663,12 +663,12 @@ a {
     fill: #81b3d2;
 }
 
-.hotel-search-hide {
-    -webkit-transform: translateY(-420px);
-        -ms-transform: translateY(-420px);
-            transform: translateY(-420px);
+.hotel-search-show {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+            transform: translateY(0px);
     -webkit-transition-duration: 1s;
-         -o-transition-duration: 1s;
+    -o-transition-duration: 1s;
             transition-duration: 1s;
 }
 
