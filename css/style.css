@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
@@ -13,8 +13,6 @@ body {
             box-sizing: border-box;
     width: 1200px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #f2f2f2;
     box-sizing: border-box;
     -webkit-box-shadow: 0 0 25px #c4c4c4;
@@ -167,19 +165,15 @@ a {
     line-height: 26px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 30px 380px;
+    padding: 61px 380px 0px 380px;
     margin-top: -238px;
-    background-color: white;
-    padding-top: 61px;
-    padding-bottom: 0;
     margin-bottom: 0;
+    background-color: white;
 }
 
 .about-sedona p {
     display: block;
-    margin-top: -27px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -27px auto 0;
     width: 440px;
 }
 
@@ -228,8 +222,7 @@ a {
 
 .advantages-list p {
     width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .blue-bg {
@@ -241,9 +234,7 @@ a {
 
 .blue-bg p {
     width: 305px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 26px;
+    margin: 26px auto 0;
 }
 
 .blue-bg h3 {
@@ -271,10 +262,11 @@ a {
     font-weight: 700;
     line-height: 21px;
     margin-top: 47px;
-    padding-left: 125px;
-    padding-right: 124px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 125px;
+    padding-right: 124px;
+    
 }
 
 .advantages-list p {
@@ -282,8 +274,7 @@ a {
 }
 
 .advantages-list span {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .features {
@@ -383,10 +374,7 @@ a {
 
 .interested p {
     width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 16px;
-    margin-bottom: 30px;
+    margin: 16px auto 30px;
     padding: 10px 120px 20px 120px;
 }
 
@@ -419,9 +407,7 @@ a {
             align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
+    margin: 0 auto;
     padding: 55px;
     width: 568px;
     background-color: #ffffff;
@@ -448,8 +434,7 @@ a {
     display: block;
     width: 568px;
     min-height: 86px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
     cursor: pointer;
@@ -510,10 +495,8 @@ a {
 }
 
 .hotel-search-form button {
-    margin-top: 53px;
+    margin: 53px auto 0;
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .button {
@@ -617,16 +600,15 @@ a {
 .check-in-wrapper {
     width: 100%;
     padding: 0;
-    margin: 0;
     position: relative;
+    margin: 0;
     margin-bottom: 25px;
 }
 
 .check-out-wrapper {
     width: 100%;
-    margin-top: 5px;
+    margin: 5px 0 28px;
     position: relative;
-    margin-bottom: 28px;
 }
 
 .check-in-wrapper input,
@@ -1163,6 +1145,7 @@ input[type="checkbox"]:checked+.checkbox-indicator {
     width: 34px;
     height: 50px;
     margin: 0;
+    margin-left: 252px;
     padding: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1170,7 +1153,6 @@ input[type="checkbox"]:checked+.checkbox-indicator {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 252px;
 }
 
 .arrow-up path,
@@ -1247,9 +1229,7 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 .hotels-found .photo-cell {
     width: 135px;
     height: 90px;
-    padding-left: 72px;
-    padding-right: 30px;
-    padding-top: 8px;
+    padding: 8px 30px 0 72px;
 }
 
 .hotels-found th {
@@ -1269,9 +1249,7 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 .hotels-found .price-cell {
     width: 100px;
     text-align: left;
-    padding-top: 8px;
-    padding-left: 5px;
-    padding-right: 200px;
+    padding: 8px 200px 0 5px;
     vertical-align: top;
 }
 
