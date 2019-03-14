@@ -1215,7 +1215,7 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 
 .hotel-item .hotel-name {
     display: block;
-    margin: 0 auto 7px 1px;
+    margin: 0 auto 7px 2px;
 }
 
 .hotel-item .hotel-type,
