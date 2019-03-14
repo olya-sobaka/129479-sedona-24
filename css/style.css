@@ -1189,12 +1189,12 @@ input[type="checkbox"]:checked+.checkbox-indicator {
     justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
-    min-height: 150px;
-    padding: 30px 72px;
+    min-height: 152px;
+    padding: 25px 72px;
 }
 
 .hotel-item .first-column {
-    margin-right: 30px;
+    margin: auto 30px auto 0;
 }
 
 .hotel-item .second-column {
@@ -1215,19 +1215,19 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 
 .hotel-item .hotel-name {
     display: block;
-    margin: 0 auto 10px 0;
+    margin: 0 auto 7px 1px;
 }
 
 .hotel-item .hotel-type,
 .hotel-item .price {
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 .hotel-item .hotel-type {
     min-width: 110px;
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 .hotel-item .price {
@@ -1240,6 +1240,7 @@ input[type="checkbox"]:checked+.checkbox-indicator {
     vertical-align: middle;
     height: 27px;
     min-width: 110px;
+    margin-bottom: 8px;
 }
 
 .hotels-found li{
@@ -1296,7 +1297,7 @@ input[type="checkbox"]:checked+.checkbox-indicator {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 3px 10px;
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 .hotels-found .button-more:hover,
