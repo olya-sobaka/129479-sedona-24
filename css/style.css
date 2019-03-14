@@ -1172,31 +1172,82 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 /* Найденные отели таблица */
 
 .hotels-found {
+    box-sizing: border-box;
     width: 1200px;
     min-height: 450px;
-    border-collapse: collapse;
-    border: 1px solid #e5e5e5;
+    list-style: none;
     background-color: #fefefe;
     color: #333333;
     font-size: 14px;
     line-height: 21px;
-    border-right: none;
-    border-left: none;
+    margin:0;
+    padding: 0;
 }
 
-.hotels-found tbody {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+.hotel-item {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 150px;
     padding: 30px 72px;
 }
 
-.rating {
-    display: inline-block;
-    vertical-align: middle;
+.hotel-item .first-column {
+    margin-right: 30px;
 }
 
-.hotels-found tr:nth-child(3n+1) {
+.hotel-item .second-column {
+    min-height: 90px;
+    min-width: 260px;
+    text-align: left;
+}
+
+.hotel-item .third-column {
+    min-height: 90px;
+    min-width: 110px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hotel-item .hotel-name {
+    display: block;
+    margin: 0 auto 10px 0;
+}
+
+.hotel-item .hotel-type,
+.hotel-item .price {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 18px;
+}
+
+.hotel-item .hotel-type {
+    min-width: 110px;
+    margin-right: 8px;
+}
+
+.hotel-item .price {
+    min-width: 140px;
+    margin-right: auto;
+}
+
+.hotel-item .rating {
+    display: inline-block;
+    vertical-align: middle;
+    height: 27px;
+    min-width: 110px;
+}
+
+.hotels-found li{
     border-top: 1px solid #e5e5e5;
+}
+
+.hotels-found li:last-child {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-found a {
@@ -1271,15 +1322,8 @@ input[type="checkbox"]:checked+.checkbox-indicator {
     padding-right: 72px;
 }
 
-.stars-cell img {
+.stars-container img {
     padding: 1px;
-}
-
-.rating-cell {
-    text-align: right;
-    vertical-align: top;
-    padding-top: 3px;
-    padding-right: 72px;
 }
 
 .rating {
@@ -1295,17 +1339,20 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 }
 
 .hotels-found .button-more {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
     background-color: #81b3d2;
-    min-width: 110px;
+    width: 110px;
     min-height: 27px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 3px 10px;
+    margin-right: 8px;
 }
 
 .hotels-found .button-more:hover,
@@ -1320,7 +1367,9 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 }
 
 .hotels-found .button-book {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
@@ -1343,3 +1392,4 @@ input[type="checkbox"]:checked+.checkbox-indicator {
     color: #847870;
     background-color: #503e33;
 }
+
