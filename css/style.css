@@ -1191,7 +1191,8 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 /* Найденные отели таблица */
 
 .hotels-found {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 1200px;
     list-style: none;
     background-color: #fefefe;
@@ -1203,8 +1204,11 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 }
 
 .hotel-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     min-height: 152px;
     padding: 25px 72px;
@@ -1224,10 +1228,19 @@ input[type="checkbox"]:checked+.checkbox-indicator {
     min-height: 90px;
     min-width: 110px;
     margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .hotel-item .hotel-name {
@@ -1354,4 +1367,3 @@ input[type="checkbox"]:checked+.checkbox-indicator {
     color: #847870;
     background-color: #503e33;
 }
-
