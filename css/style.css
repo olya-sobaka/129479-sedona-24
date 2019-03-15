@@ -153,7 +153,7 @@ a {
     height: 800px;
     background-color: #85a4c2;
     background-image: url("../img/index/white-mask.svg"), url("../img/index/welcome-to-sedona.svg"), url("../img/index/bg.jpg");
-    background-position: 0px 507px, 50% 132px, 50% -27px;
+    background-position: 0px 507.5px, 50% 132px, 50% -27px;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 1201px 59px, 459px 353px, 1200px 800px;
     margin-top: -56px;
@@ -166,7 +166,7 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 61px 380px 0px 380px;
-    margin-top: -238px;
+    margin-top: -236px;
     margin-bottom: 0;
     background-color: white;
 }
@@ -192,7 +192,7 @@ a {
     color: #333333;
     margin: 0;
     margin-top: -1px;
-    padding: 29px 78px 53px 78px;
+    padding: 29px 78px 51px 78px;
     background-color: #ffffff;
 }
 
@@ -220,10 +220,6 @@ a {
     margin: 0;
 }
 
-.advantages-list p {
-    width: 280px;
-    margin: 0 auto;
-}
 
 .blue-bg {
     background-color: #81b3d2;
@@ -260,11 +256,27 @@ a {
     margin: 47px auto 23px;
     padding-left: 125px;
     padding-right: 124px;
-    
 }
 
+
 .advantages-list p {
+    margin: 20px auto auto;
+    width: 306px;
+}
+
+.area p,
+.road p,
+.tourists p {
     margin-top: 24px;
+}
+
+.area p,
+.road p {
+    width: 280px;
+}
+
+.tourists p {
+    width: 255px;
 }
 
 .advantages-list span {
@@ -366,8 +378,11 @@ a {
 }
 
 .interested p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 24px;
     width: 450px;
-    margin: 16px auto 30px;
+    margin: 14px auto 27px;
     padding: 10px 120px 20px 120px;
 }
 
@@ -869,7 +884,7 @@ a {
     display: flex;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 30px 73px 6px;
+    padding: 28px 73px 6px;
 }
 
 .filter-title {
@@ -1007,12 +1022,16 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 }
 
 .price-controls label {
+    font-size: 14px;
+    line-height: 21px;
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
 }
 
 .price-controls input {
+    font-size: 14px;
+    line-height: 21px;
     width: 67px;
     margin-left: 4px;
 }
@@ -1174,7 +1193,6 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 .hotels-found {
     box-sizing: border-box;
     width: 1200px;
-    min-height: 450px;
     list-style: none;
     background-color: #fefefe;
     color: #333333;
@@ -1186,7 +1204,6 @@ input[type="checkbox"]:checked+.checkbox-indicator {
 
 .hotel-item {
     display: flex;
-    justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
     min-height: 152px;
