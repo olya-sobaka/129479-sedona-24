@@ -251,6 +251,7 @@ a {
 
 .advantages-list p {
     margin: 27px auto;
+    margin: 20px auto;
     width: 306px;
 }
 
@@ -304,7 +305,7 @@ a {
 
 .features p {
     width: 285px;
-    margin: 28px auto;
+    margin: 24px auto;
 }
 
 .features h4 {
@@ -337,7 +338,7 @@ a {
     width: 75px;
     height: 72px;
     position: absolute;
-    top: -100px;
+    top: -104px;
     left: 163px;
 }
 
@@ -371,7 +372,7 @@ a {
     line-height: 24px;
     width: 450px;
     margin: 14px auto 27px;
-    padding: 10px 120px 20px 120px;
+    padding: 9px 120px 20px 120px;
 }
 
 /* Форма поиска гостиниц */
@@ -448,6 +449,7 @@ a {
 }
 
 .hotel-search-form label {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
@@ -686,6 +688,7 @@ a {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    margin-top: -4px;
 }
 
 .main-footer>span,
@@ -743,6 +746,7 @@ a {
 .social {
     list-style: none;
     margin: 0;
+    margin-top: -2px;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -848,7 +852,6 @@ a {
 }
 
 .copyright a {
-    margin-top: 7px;
     margin-left: 5px;
 }
 
@@ -879,7 +882,7 @@ a {
     display: flex;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 28px 72px 8px;
+    padding: 26px 71px 6px;
 }
 
 .filter-title {
@@ -898,7 +901,7 @@ a {
 
 .filter-infrastructure {
     text-align: left;
-    margin-right: 120px;
+    margin-right: 123px;
     padding-bottom: 0;
 }
 
@@ -986,10 +989,10 @@ a {
     border: 2px solid #ffffff;
     border-radius: 2px;
     background-color: transparent;
-    padding: 4px 36px 5px 32px;
+    padding: 5px 34px 7px 33px;
     font: inherit;
     text-transform: uppercase;
-    margin-left: -10px;
+    margin-left: -13px;
 }
 
 .filter-button:hover,
@@ -1000,7 +1003,7 @@ a {
 
 .price-controls {
     height: 36px;
-    min-width: 318px;
+    min-width: 319px;
     margin-bottom: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -1053,7 +1056,7 @@ a {
 
 .range-controls {
     position: relative;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
 }
 
 .range-controls .scale {
@@ -1089,7 +1092,7 @@ a {
 
 .range-toggle-max {
     top: -9px;
-    left: 80%;
+    left: 79%;
 }
 
 .range-toggle:hover {
@@ -1105,7 +1108,7 @@ a {
     display: flex;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 19px 73px 17px;
+    padding: 18px 71px 19px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1127,6 +1130,7 @@ a {
     font-weight: 400;
     line-height: 18px;
     margin-right: 40px;
+    margin-top: 14px;
 }
 
 .sort-links {
@@ -1139,7 +1143,8 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-right: 252px;
+    margin-right: 249px;
+    margin-top: 14px;
 }
 
 .sort-links .current {
@@ -1173,7 +1178,7 @@ a {
     width: 34px;
     height: 50px;
     margin: 0;
-    margin-left: 252px;
+    margin-left: 255px;
     padding: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1226,12 +1231,12 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    min-height: 152px;
+    min-height: 151px;
     padding: 24px 72px 22px;
 }
 
 .hotel-item .first-column {
-    margin: auto 29px auto 0;
+    margin: auto 30px auto 0;
 }
 
 .hotel-item .second-column {
@@ -1268,7 +1273,7 @@ a {
 .hotel-item .price {
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
 }
 
 .hotel-item .hotel-type {
@@ -1347,7 +1352,7 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 3px 10px;
-    margin-right: 2px;
+    margin-right: 4px;
 }
 
 .hotels-found .button-more:hover,
