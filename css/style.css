@@ -1,5 +1,4 @@
 body {
-    margin: 0 auto;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
@@ -11,10 +10,12 @@ body {
     background-color: #f2f2f2;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 1200px;
     text-align: center;
-    background-color: #f2f2f2;
-    box-sizing: border-box;
+}
+
+.body-container {
+    width: 1200px;
+    margin: 0 auto;
     -webkit-box-shadow: 0 0 25px #c4c4c4;
             box-shadow: 0 0 25px #c4c4c4;
 }
@@ -137,13 +138,6 @@ a {
 
 .site-navigation .map {
     margin-left: auto;
-    padding-left: 80px;
-    padding-right: 35px;
-}
-
-.site-navigation .photo {
-    padding-right: 80px;
-    padding-left: 32px;
 }
 
 /* Main */
@@ -228,10 +222,6 @@ a {
     min-height: 256px;
 }
 
-.blue-bg p {
-    width: 305px;
-    margin: 26px auto 0;
-}
 
 .list-image-hotel {
     background-color: #907968;
@@ -260,14 +250,8 @@ a {
 
 
 .advantages-list p {
-    margin: 20px auto auto;
+    margin: 27px auto;
     width: 306px;
-}
-
-.area p,
-.road p,
-.tourists p {
-    margin-top: 24px;
 }
 
 .area p,
@@ -288,7 +272,7 @@ a {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -320,36 +304,40 @@ a {
 
 .features p {
     width: 285px;
-    margin: 24px auto 0;
+    margin: 28px auto;
 }
 
-.features li:first-of-type::before {
+.features h4 {
+    position: relative;
+}
+
+.house h4::before {
     content: url("../img/index/icon-house.svg");
     display: block;
     width: 75px;
     height: 72px;
     position: absolute;
-    top: 60px;
+    top: -100px;
     left: 163px;
 }
 
-.features li:nth-of-type(2)::before {
+.food h4::before {
     content: url("../img/index/icon-burger.svg");
     display: block;
     width: 75px;
     height: 72px;
     position: absolute;
-    top: 60px;
+    top: -100px;
     left: 163px;
 }
 
-.features li:nth-of-type(3)::before {
+.souvenirs h4::before {
     content: url("../img/index/icon-present.svg");
     display: block;
     width: 75px;
     height: 72px;
     position: absolute;
-    top: 57px;
+    top: -100px;
     left: 163px;
 }
 
@@ -624,28 +612,32 @@ a {
     margin-left: 13px;
 }
 
-.icon-calendar-in {
+.hotel-search .button-with-calendar {
+    margin: 0;
     position: absolute;
+    width: 22px;
+    height: 22px;
     top: 7px;
     right: 10px;
+    border: none;
+    background-color: transparent;
 }
 
-.icon-calendar-out {
-    position: absolute;
-    top: 7px;
-    right: 10px;
+.button-with-calendar:focus,
+.button-with-calendar:active {
+    outline: none;
 }
 
-.icon-calendar path {
+.button-with-calendar path {
     fill: #cacaca;
 }
 
-.icon-calendar:hover path,
-.icon-calendar:focus path {
+.button-with-calendar:hover path,
+.button-with-calendar:focus path {
     fill: #000000;
 }
 
-.icon-calendar:active path {
+.button-with-calendar:active path {
     fill: #81b3d2;
 }
 
@@ -949,6 +941,11 @@ a {
     height: 19px;
     border: 1.8px solid #ffffff;
     border-radius: 4px;
+}
+
+.checkbox input[type="checkbox"]:focus+.checkbox-indicator {
+    outline: 1px solid #5E9ED6;
+    outline-offset: 2px;
 }
 
 .checkbox input[type="checkbox"]:disabled+.checkbox-indicator {
