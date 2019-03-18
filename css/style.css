@@ -450,6 +450,9 @@ a {
 .hotel-search-form label {
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #000000;
     font-size: 14px;
     font-weight: 700;
