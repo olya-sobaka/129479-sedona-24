@@ -448,6 +448,8 @@ a {
 }
 
 .hotel-search-form label {
+    display: -ms-flexbox;
+    display: flex;
     color: #000000;
     font-size: 14px;
     font-weight: 700;
@@ -502,14 +504,11 @@ a {
 }
 
 .form-half-width {
-    height: 40px;
+    min-height: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: 460px;
 }
 
 .form-half-width input {
@@ -591,10 +590,11 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 54px;
 }
 
 .check-in-wrapper {
-    width: 100%;
+    width: 460px;
     padding: 0;
     position: relative;
     margin: 0;
@@ -602,14 +602,14 @@ a {
 }
 
 .check-out-wrapper {
-    width: 100%;
+    width: 460px;
     margin: 5px 0 28px;
     position: relative;
 }
 
 .check-in-wrapper input,
 .check-out-wrapper input {
-    margin-left: 13px;
+    margin-left: auto;
 }
 
 .hotel-search .button-with-calendar {
