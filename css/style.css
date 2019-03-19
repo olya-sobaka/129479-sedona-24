@@ -250,7 +250,6 @@ a {
 
 
 .advantages-list p {
-    margin: 27px auto;
     margin: 20px auto;
     width: 306px;
 }
@@ -622,7 +621,10 @@ a {
     position: absolute;
     width: 21px;
     height: 22px;
-    top: 7px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: 10px;
     border: none;
     background-color: transparent;
